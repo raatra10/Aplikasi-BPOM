@@ -1,0 +1,1568 @@
+import java.util.ArrayList;
+
+class Produk {
+    String kodeBPOM;
+    String jenisProduk;
+    String merek;
+    String tanggalTerbit;
+
+    public Produk(String kodeBPOM, String jenisProduk, String merek, String tanggalTerbit) {
+        this.kodeBPOM = kodeBPOM;
+        this.jenisProduk = jenisProduk;
+        this.merek = merek;
+        this.tanggalTerbit = tanggalTerbit;
+    }
+
+    @Override
+    public String toString() {
+        return "\nKode BPOM  : " + kodeBPOM + 
+             "\nProduk     : " + jenisProduk  +
+             "\nmerek      : " + merek +
+             "\ntanggalTerbit: " + tanggalTerbit;
+    }
+    
+    
+    public static ArrayList<Produk> initProduk() {
+        ArrayList<Produk> produkList = new ArrayList<>();
+        produkList.add(new Produk("BPOM0001", "Serum", "Lorea", "2024-03-15"));
+        produkList.add(new Produk("BPOM0002", "Serum", "Impora", "2024-01-01"));
+        produkList.add(new Produk("BPOM0003", "Serum", "Khaf", "2024-02-10"));
+        produkList.add(new Produk("BPOM0004", "Serum", "Somtic", "2024-02-10"));
+        produkList.add(new Produk("BPOM0005", "Serum", "Bioaqua", "2024-02-10"));
+        produkList.add(new Produk("BPOM0006", "Serum", "Amura", "2024-02-10"));
+        produkList.add(new Produk("BPOM0007", "Serum", "ERHA", "2024-02-10"));
+        produkList.add(new Produk("BPOM0008" ,"Serun", "Amura", "2024-02-10"));
+        
+        produkList.add(new Produk("BPOM0009", "Toner", "Amura", "2024-02-10"));
+        produkList.add(new Produk("BPOM0010", "Toner", "ERHA", "2024-02-10"));
+        produkList.add(new Produk("BPOM0011", "Toner", "Impoora", "2024-02-10"));
+        produkList.add(new Produk("BPOM0012", "Toner", "Lorea", "2024-02-10"));
+        produkList.add(new Produk("BPOM0013", "Toner", "Wardah", "2024-02-10"));
+        produkList.add(new Produk("BPOM0014", "Toner", "Garnier", "2024-02-10"));
+        produkList.add(new Produk("BPOM0015", "Toner", "Khaf", "2024-02-10"));
+        
+        produkList.add(new Produk("BPOM0016", "Face Wash", "Clay", "2010-09-23"));
+        produkList.add(new Produk("BPOM0017", "Face Wash", "ERHA", "2023-02-21"));
+        produkList.add(new Produk("BPOM0018", "Face Wash", "Clean", "2022-10-11"));
+        produkList.add(new Produk("BPOM0019", "Face Wash", "Acnes", "2021-03-14"));
+        produkList.add(new Produk("BPOM0020", "Face Wash", "Wardah", "2020-04-05"));
+        
+        produkList.add(new Produk("BPOM0021", "Toner", "Garnier", "2023-02-10"));
+        produkList.add(new Produk("BPOM0022", "Moisturizer", "Wardah", "2022-06-15"));
+        produkList.add(new Produk("BPOM0023", "Sunscreen", "ERHA", "2024-02-18"));
+        produkList.add(new Produk("BPOM0024", "Serum", "Amura", "2021-08-25"));
+        produkList.add(new Produk("BPOM0025", "Face Wash", "Lorea", "2019-07-12"));
+        produkList.add(new Produk("BPOM0026", "Toner", "Khaf", "2020-05-30"));
+        produkList.add(new Produk("BPOM0027", "Exfoliator", "Acnes", "2023-11-22"));
+        produkList.add(new Produk("BPOM0028", "Sunscreen", "Impoora", "2022-01-14"));
+        produkList.add(new Produk("BPOM0029", "Moisturizer", "ERHA", "2018-10-09"));
+        produkList.add(new Produk("BPOM0030", "Serum", "Garnier", "2017-12-04"));
+        produkList.add(new Produk("BPOM0031", "Face Wash", "Wardah", "2024-04-20"));
+        produkList.add(new Produk("BPOM0032", "Toner", "Amura", "2023-06-11"));
+        produkList.add(new Produk("BPOM0033", "Sunscreen", "Khaf", "2022-08-16"));
+        produkList.add(new Produk("BPOM0034", "Exfoliator", "ERHA", "2021-02-17"));
+        produkList.add(new Produk("BPOM0035", "Serum", "Lorea", "2019-09-19"));
+        produkList.add(new Produk("BPOM0036", "Moisturizer", "Impoora", "2018-12-31"));
+        produkList.add(new Produk("BPOM0037", "Face Wash", "Garnier", "2024-05-18"));
+        produkList.add(new Produk("BPOM0038", "Toner", "Acnes", "2023-07-24"));
+        produkList.add(new Produk("BPOM0039", "Sunscreen", "Wardah", "2022-10-13"));
+        produkList.add(new Produk("BPOM0040", "Serum", "ERHA", "2021-01-02"));
+        produkList.add(new Produk("BPOM0041", "Exfoliator", "Khaf", "2020-09-08"));
+        produkList.add(new Produk("BPOM0042", "Moisturizer", "Amura", "2023-02-21"));
+        produkList.add(new Produk("BPOM0043", "Face Wash", "Lorea", "2022-06-28"));
+        produkList.add(new Produk("BPOM0044", "Toner", "Wardah", "2019-03-23"));
+        produkList.add(new Produk("BPOM0045", "Sunscreen", "Impoora", "2018-11-15"));
+        produkList.add(new Produk("BPOM0046", "Moisturizer", "Garnier", "2017-12-06"));
+        produkList.add(new Produk("BPOM0047", "Serum", "ERHA", "2024-02-09"));
+        produkList.add(new Produk("BPOM0048", "Exfoliator", "Khaf", "2023-10-03"));
+        produkList.add(new Produk("BPOM0049", "Toner", "Acnes", "2022-11-17"));
+        produkList.add(new Produk("BPOM0050", "Face Wash", "Wardah", "2021-04-25"));
+        produkList.add(new Produk("BPOM0051", "Toner", "Scarlett", "2023-08-11"));
+        produkList.add(new Produk("BPOM0052", "Moisturizer", "Bioaqua", "2022-03-17"));
+        produkList.add(new Produk("BPOM0053", "Sunscreen", "MS Glow", "2024-01-15"));
+        produkList.add(new Produk("BPOM0054", "Serum", "Ponds", "2021-09-08"));
+        produkList.add(new Produk("BPOM0055", "Face Wash", "Scora", "2020-04-21"));
+        produkList.add(new Produk("BPOM0056", "Exfoliator", "Somethinc", "2023-07-12"));
+        produkList.add(new Produk("BPOM0057", "Toner", "Scarlett", "2022-06-10"));
+        produkList.add(new Produk("BPOM0058", "Moisturizer", "Bioaqua", "2021-10-19"));
+        produkList.add(new Produk("BPOM0059", "Sunscreen", "MS Glow", "2023-05-05"));
+        produkList.add(new Produk("BPOM0060", "Serum", "Ponds", "2020-12-03"));
+        produkList.add(new Produk("BPOM0061", "Face Wash", "Scora", "2021-08-30"));
+        produkList.add(new Produk("BPOM0062", "Exfoliator", "Somethinc", "2023-04-22"));
+        produkList.add(new Produk("BPOM0063", "Toner", "Somethinc", "2022-09-11"));
+        produkList.add(new Produk("BPOM0064", "Moisturizer", "Scarlett", "2020-05-09"));
+        produkList.add(new Produk("BPOM0065", "Sunscreen", "Bioaqua", "2024-06-19"));
+        produkList.add(new Produk("BPOM0066", "Serum", "MS Glow", "2023-10-25"));
+        produkList.add(new Produk("BPOM0067", "Face Wash", "Ponds", "2021-03-18"));
+        produkList.add(new Produk("BPOM0068", "Exfoliator", "Scora", "2022-08-01"));
+        produkList.add(new Produk("BPOM0069", "Toner", "Somethinc", "2024-02-10"));
+        produkList.add(new Produk("BPOM0070", "Moisturizer", "Scarlett", "2020-07-29"));
+        produkList.add(new Produk("BPOM0071", "Sunscreen", "Bioaqua", "2022-11-20"));
+        produkList.add(new Produk("BPOM0072", "Serum", "MS Glow", "2023-06-22"));
+        produkList.add(new Produk("BPOM0073", "Face Wash", "Ponds", "2021-04-19"));
+        produkList.add(new Produk("BPOM0074", "Exfoliator", "Scora", "2023-08-13"));
+        produkList.add(new Produk("BPOM0075", "Toner", "Somethinc", "2022-05-12"));
+        produkList.add(new Produk("BPOM0076", "Moisturizer", "Wardah", "2024-03-10"));
+        produkList.add(new Produk("BPOM0077", "Sunscreen", "Scarlett", "2021-09-14"));
+        produkList.add(new Produk("BPOM0078", "Serum", "Bioaqua", "2022-10-18"));
+        produkList.add(new Produk("BPOM0079", "Face Wash", "MS Glow", "2020-12-29"));
+        produkList.add(new Produk("BPOM0080", "Exfoliator", "Ponds", "2023-11-17"));
+        produkList.add(new Produk("BPOM0081", "Toner", "Scora", "2024-02-08"));
+        produkList.add(new Produk("BPOM0082", "Moisturizer", "Somethinc", "2022-09-13"));
+        produkList.add(new Produk("BPOM0083", "Sunscreen", "Wardah", "2021-07-07"));
+        produkList.add(new Produk("BPOM0084", "Serum", "Scarlett", "2020-11-25"));
+        produkList.add(new Produk("BPOM0085", "Face Wash", "Bioaqua", "2023-08-02"));
+        produkList.add(new Produk("BPOM0086", "Exfoliator", "MS Glow", "2022-06-10"));
+        produkList.add(new Produk("BPOM0087", "Toner", "Ponds", "2024-04-15"));
+        produkList.add(new Produk("BPOM0088", "Moisturizer", "Scora", "2020-10-10"));
+        produkList.add(new Produk("BPOM0089", "Sunscreen", "Somethinc", "2023-03-21"));
+        produkList.add(new Produk("BPOM0090", "Serum", "Wardah", "2022-07-12"));
+        produkList.add(new Produk("BPOM0091", "Face Wash", "Scarlett", "2024-05-09"));
+        produkList.add(new Produk("BPOM0092", "Exfoliator", "Bioaqua", "2021-12-08"));
+        produkList.add(new Produk("BPOM0093", "Toner", "MS Glow", "2023-06-11"));
+        produkList.add(new Produk("BPOM0094", "Moisturizer", "Ponds", "2022-09-24"));
+        produkList.add(new Produk("BPOM0095", "Sunscreen", "Scora", "2020-02-17"));
+        produkList.add(new Produk("BPOM0096", "Serum", "Somethinc", "2021-08-30"));
+        produkList.add(new Produk("BPOM0097", "Face Wash", "Wardah", "2023-10-15"));
+        produkList.add(new Produk("BPOM0098", "Exfoliator", "Scarlett", "2024-06-21"));
+        produkList.add(new Produk("BPOM0099", "Toner", "Bioaqua", "2022-12-11"));
+        produkList.add(new Produk("BPOM0100", "Moisturizer", "MS Glow", "2023-05-30"));
+        produkList.add(new Produk("BPOM0101", "Sunscreen", "Ponds", "2024-03-19"));
+        produkList.add(new Produk("BPOM0102", "Serum", "Scora", "2021-04-14"));
+        produkList.add(new Produk("BPOM0103", "Face Wash", "Somethinc", "2023-09-03"));
+        produkList.add(new Produk("BPOM0104", "Exfoliator", "Wardah", "2024-05-16"));
+        produkList.add(new Produk("BPOM0105", "Toner", "Scarlett", "2023-02-24"));
+        produkList.add(new Produk("BPOM0106", "Moisturizer", "Bioaqua", "2022-09-13"));
+        produkList.add(new Produk("BPOM0107", "Sunscreen", "MS Glow", "2023-08-30"));
+        produkList.add(new Produk("BPOM0108", "Serum", "Ponds", "2021-06-19"));
+        produkList.add(new Produk("BPOM0109", "Face Wash", "Scora", "2024-02-09"));
+        produkList.add(new Produk("BPOM0110", "Exfoliator", "Somethinc", "2020-04-15"));
+        produkList.add(new Produk("BPOM0111", "Toner", "Wardah", "2021-08-23"));
+        produkList.add(new Produk("BPOM0112", "Moisturizer", "Scarlett", "2023-03-29"));
+        produkList.add(new Produk("BPOM0113", "Sunscreen", "Bioaqua", "2022-11-10"));
+        produkList.add(new Produk("BPOM0114", "Serum", "MS Glow", "2024-05-27"));
+        produkList.add(new Produk("BPOM0115", "Face Wash", "Ponds", "2020-09-30"));
+        produkList.add(new Produk("BPOM0116", "Exfoliator", "Scora", "2023-04-14"));
+        produkList.add(new Produk("BPOM0117", "Toner", "Somethinc", "2022-07-12"));
+        produkList.add(new Produk("BPOM0118", "Moisturizer", "Wardah", "2021-03-20"));
+        produkList.add(new Produk("BPOM0119", "Sunscreen", "Scarlett", "2024-01-22"));
+        produkList.add(new Produk("BPOM0120", "Serum", "Bioaqua", "2023-06-30"));
+        produkList.add(new Produk("BPOM0121", "Face Wash", "MS Glow", "2022-05-18"));
+        produkList.add(new Produk("BPOM0122", "Exfoliator", "Ponds", "2021-11-24"));
+        produkList.add(new Produk("BPOM0123", "Toner", "Scora", "2020-10-08"));
+        produkList.add(new Produk("BPOM0124", "Moisturizer", "Somethinc", "2024-07-14"));
+        produkList.add(new Produk("BPOM0125", "Sunscreen", "Wardah", "2023-12-03"));
+        produkList.add(new Produk("BPOM0126", "Serum", "Scarlett", "2021-06-10"));
+        produkList.add(new Produk("BPOM0127", "Face Wash", "Bioaqua", "2022-09-21"));
+        produkList.add(new Produk("BPOM0128", "Exfoliator", "MS Glow", "2023-04-30"));
+        produkList.add(new Produk("BPOM0129", "Toner", "Ponds", "2024-02-17"));
+        produkList.add(new Produk("BPOM0130", "Moisturizer", "Scora", "2020-03-14"));
+        produkList.add(new Produk("BPOM0131", "Sunscreen", "Somethinc", "2023-11-22"));
+        produkList.add(new Produk("BPOM0132", "Serum", "Wardah", "2022-01-09"));
+        produkList.add(new Produk("BPOM0133", "Face Wash", "Scarlett", "2021-08-27"));
+        produkList.add(new Produk("BPOM0134", "Exfoliator", "Bioaqua", "2024-06-25"));
+        produkList.add(new Produk("BPOM0135", "Toner", "MS Glow", "2023-03-08"));
+        produkList.add(new Produk("BPOM0136", "Moisturizer", "Ponds", "2022-07-18"));
+        produkList.add(new Produk("BPOM0137", "Sunscreen", "Scora", "2021-12-12"));
+        produkList.add(new Produk("BPOM0138", "Serum", "Somethinc", "2024-08-10"));
+        produkList.add(new Produk("BPOM0139", "Face Wash", "Wardah", "2023-01-11"));
+        produkList.add(new Produk("BPOM0140", "Exfoliator", "Scarlett", "2022-10-19"));
+        produkList.add(new Produk("BPOM0141", "Toner", "Bioaqua", "2024-04-21"));
+        produkList.add(new Produk("BPOM0142", "Moisturizer", "MS Glow", "2023-06-15"));
+        produkList.add(new Produk("BPOM0143", "Sunscreen", "Ponds", "2021-05-05"));
+        produkList.add(new Produk("BPOM0144", "Serum", "Scora", "2022-11-06"));
+        produkList.add(new Produk("BPOM0145", "Face Wash", "Somethinc", "2024-02-14"));
+        produkList.add(new Produk("BPOM0146", "Exfoliator", "Wardah", "2023-07-28"));
+        produkList.add(new Produk("BPOM0147", "Toner", "Scarlett", "2022-09-13"));
+        produkList.add(new Produk("BPOM0148", "Moisturizer", "Bioaqua", "2021-10-04"));
+        produkList.add(new Produk("BPOM0149", "Sunscreen", "MS Glow", "2023-03-07"));
+        produkList.add(new Produk("BPOM0150", "Serum", "Ponds", "2024-06-01"));
+        produkList.add(new Produk("BPOM0151", "Face Wash", "Scora", "2020-12-30"));
+        produkList.add(new Produk("BPOM0152", "Exfoliator", "Somethinc", "2021-01-18"));
+        produkList.add(new Produk("BPOM0153", "Toner", "Wardah", "2023-07-15"));
+        produkList.add(new Produk("BPOM0154", "Moisturizer", "Scarlett", "2024-02-09"));
+        produkList.add(new Produk("BPOM0155", "Sunscreen", "Bioaqua", "2022-03-24"));
+        produkList.add(new Produk("BPOM0156", "Serum", "MS Glow", "2021-09-11"));
+        produkList.add(new Produk("BPOM0157", "Face Wash", "Ponds", "2020-07-23"));
+        produkList.add(new Produk("BPOM0158", "Exfoliator", "Scora", "2023-04-16"));
+        produkList.add(new Produk("BPOM0159", "Toner", "Somethinc", "2022-08-09"));
+        produkList.add(new Produk("BPOM0160", "Moisturizer", "Wardah", "2023-05-03"));
+        produkList.add(new Produk("BPOM0161", "Sunscreen", "Scarlett", "2024-01-12"));
+        produkList.add(new Produk("BPOM0162", "Serum", "Bioaqua", "2023-06-21"));
+        produkList.add(new Produk("BPOM0163", "Face Wash", "MS Glow", "2021-04-12"));
+        produkList.add(new Produk("BPOM0164", "Exfoliator", "Ponds", "2022-10-02"));
+        produkList.add(new Produk("BPOM0165", "Toner", "Somethinc", "2021-05-13"));
+        produkList.add(new Produk("BPOM0166", "Moisturizer", "Wardah", "2024-03-22"));
+        produkList.add(new Produk("BPOM0167", "Sunscreen", "Scarlett", "2023-07-08"));
+        produkList.add(new Produk("BPOM0168", "Serum", "Bioaqua", "2021-11-29"));
+        produkList.add(new Produk("BPOM0169", "Face Wash", "MS Glow", "2022-06-17"));
+        produkList.add(new Produk("BPOM0170", "Exfoliator", "Ponds", "2020-10-04"));
+        produkList.add(new Produk("BPOM0171", "Toner", "Scora", "2023-04-19"));
+        produkList.add(new Produk("BPOM0172", "Moisturizer", "Somethinc", "2022-08-05"));
+        produkList.add(new Produk("BPOM0173", "Sunscreen", "Wardah", "2024-01-18"));
+        produkList.add(new Produk("BPOM0174", "Serum", "Scarlett", "2023-10-07"));
+        produkList.add(new Produk("BPOM0175", "Face Wash", "Bioaqua", "2022-07-22"));
+        produkList.add(new Produk("BPOM0176", "Exfoliator", "MS Glow", "2021-05-20"));
+        produkList.add(new Produk("BPOM0177", "Toner", "Ponds", "2023-03-15"));
+        produkList.add(new Produk("BPOM0178", "Moisturizer", "Scora", "2024-02-11"));
+        produkList.add(new Produk("BPOM0179", "Sunscreen", "Somethinc", "2020-11-27"));
+        produkList.add(new Produk("BPOM0180", "Serum", "Wardah", "2023-09-18"));
+        produkList.add(new Produk("BPOM0181", "Face Wash", "Scarlett", "2022-05-09"));
+        produkList.add(new Produk("BPOM0182", "Exfoliator", "Bioaqua", "2021-02-25"));
+        produkList.add(new Produk("BPOM0183", "Toner", "MS Glow", "2023-06-04"));
+        produkList.add(new Produk("BPOM0184", "Moisturizer", "Ponds", "2024-01-14"));
+        produkList.add(new Produk("BPOM0185", "Sunscreen", "Scora", "2022-03-18"));
+        produkList.add(new Produk("BPOM0186", "Serum", "Somethinc", "2021-10-21"));
+        produkList.add(new Produk("BPOM0187", "Face Wash", "Wardah", "2023-08-11"));
+        produkList.add(new Produk("BPOM0188", "Exfoliator", "Scarlett", "2024-02-08"));
+        produkList.add(new Produk("BPOM0189", "Toner", "Bioaqua", "2023-12-26"));
+        produkList.add(new Produk("BPOM0190", "Moisturizer", "MS Glow", "2022-11-30"));
+        produkList.add(new Produk("BPOM0191", "Sunscreen", "Ponds", "2021-06-22"));
+        produkList.add(new Produk("BPOM0192", "Serum", "Scora", "2024-05-25"));
+        produkList.add(new Produk("BPOM0193", "Face Wash", "Somethinc", "2023-04-17"));
+        produkList.add(new Produk("BPOM0194", "Exfoliator", "Wardah", "2022-09-20"));
+        produkList.add(new Produk("BPOM0195", "Toner", "Scarlett", "2021-08-03"));
+        produkList.add(new Produk("BPOM0196", "Moisturizer", "Bioaqua", "2024-06-21"));
+        produkList.add(new Produk("BPOM0197", "Sunscreen", "MS Glow", "2023-05-06"));
+        produkList.add(new Produk("BPOM0198", "Serum", "Ponds", "2020-12-12"));
+        produkList.add(new Produk("BPOM0199", "Face Wash", "Scora", "2021-09-26"));
+        produkList.add(new Produk("BPOM0200", "Exfoliator", "Somethinc", "2023-11-15"));
+        produkList.add(new Produk("BPOM0201", "Toner", "Wardah", "2024-01-29"));
+        produkList.add(new Produk("BPOM0202", "Moisturizer", "Scarlett", "2022-06-20"));
+        produkList.add(new Produk("BPOM0203", "Sunscreen", "Bioaqua", "2021-07-10"));
+        produkList.add(new Produk("BPOM0204", "Serum", "MS Glow", "2023-03-11"));
+        produkList.add(new Produk("BPOM0205", "Face Wash", "Ponds", "2022-08-18"));
+        produkList.add(new Produk("BPOM0206", "Exfoliator", "Scora", "2024-05-02"));
+        produkList.add(new Produk("BPOM0207", "Toner", "Somethinc", "2023-04-10"));
+        produkList.add(new Produk("BPOM0208", "Moisturizer", "Wardah", "2021-12-21"));
+        produkList.add(new Produk("BPOM0209", "Sunscreen", "Scarlett", "2022-10-24"));
+        produkList.add(new Produk("BPOM0210", "Serum", "Bioaqua", "2023-09-16"));
+        produkList.add(new Produk("BPOM0211", "Face Wash", "MS Glow", "2020-06-28"));
+        produkList.add(new Produk("BPOM0212", "Exfoliator", "Ponds", "2021-08-14"));
+        produkList.add(new Produk("BPOM0213", "Toner", "Scora", "2024-02-20"));
+        produkList.add(new Produk("BPOM0214", "Moisturizer", "Somethinc", "2023-01-11"));
+        produkList.add(new Produk("BPOM0215", "Sunscreen", "Wardah", "2022-04-12"));
+        produkList.add(new Produk("BPOM0216", "Serum", "Scarlett", "2021-11-09"));
+        produkList.add(new Produk("BPOM0217", "Face Wash", "Bioaqua", "2023-05-27"));
+        produkList.add(new Produk("BPOM0218", "Exfoliator", "MS Glow", "2024-03-18"));
+        produkList.add(new Produk("BPOM0219", "Toner", "Ponds", "2023-07-30"));
+        produkList.add(new Produk("BPOM0220", "Moisturizer", "Scora", "2022-11-06"));
+        produkList.add(new Produk("BPOM0221", "Moisturizer", "Wardah", "2023-11-22"));
+        produkList.add(new Produk("BPOM0222", "Sunscreen", "Scarlett", "2021-09-10"));
+        produkList.add(new Produk("BPOM0223", "Serum", "Bioaqua", "2022-05-17"));
+        produkList.add(new Produk("BPOM0224", "Face Wash", "MS Glow", "2024-07-12"));
+        produkList.add(new Produk("BPOM0225", "Exfoliator", "Ponds", "2023-12-09"));
+        produkList.add(new Produk("BPOM0226", "Toner", "Scora", "2021-06-14"));
+        produkList.add(new Produk("BPOM0227", "Moisturizer", "Somethinc", "2022-01-11"));
+        produkList.add(new Produk("BPOM0228", "Sunscreen", "Wardah", "2024-03-25"));
+        produkList.add(new Produk("BPOM0229", "Serum", "Scarlett", "2023-06-16"));
+        produkList.add(new Produk("BPOM0230", "Face Wash", "Bioaqua", "2021-08-19"));
+        produkList.add(new Produk("BPOM0231", "Exfoliator", "MS Glow", "2022-12-03"));
+        produkList.add(new Produk("BPOM0232", "Toner", "Ponds", "2020-10-28"));
+        produkList.add(new Produk("BPOM0233", "Moisturizer", "Scora", "2023-03-15"));
+        produkList.add(new Produk("BPOM0234", "Sunscreen", "Somethinc", "2022-07-26"));
+        produkList.add(new Produk("BPOM0235", "Serum", "Wardah", "2024-02-14"));
+        produkList.add(new Produk("BPOM0236", "Face Wash", "Scarlett", "2023-09-08"));
+        produkList.add(new Produk("BPOM0237", "Exfoliator", "Bioaqua", "2021-03-19"));
+        produkList.add(new Produk("BPOM0238", "Toner", "MS Glow", "2022-04-23"));
+        produkList.add(new Produk("BPOM0239", "Moisturizer", "Ponds", "2024-06-30"));
+        produkList.add(new Produk("BPOM0240", "Sunscreen", "Scora", "2023-10-12"));
+        produkList.add(new Produk("BPOM0241", "Serum", "Somethinc", "2022-02-01"));
+        produkList.add(new Produk("BPOM0242", "Face Wash", "Wardah", "2023-11-21"));
+        produkList.add(new Produk("BPOM0243", "Exfoliator", "Scarlett", "2021-09-15"));
+        produkList.add(new Produk("BPOM0244", "Toner", "Bioaqua", "2022-07-09"));
+        produkList.add(new Produk("BPOM0245", "Moisturizer", "MS Glow", "2024-01-19"));
+        produkList.add(new Produk("BPOM0246", "Sunscreen", "Ponds", "2023-05-13"));
+        produkList.add(new Produk("BPOM0247", "Serum", "Scora", "2021-06-25"));
+        produkList.add(new Produk("BPOM0248", "Face Wash", "Somethinc", "2022-09-18"));
+        produkList.add(new Produk("BPOM0249", "Exfoliator", "Wardah", "2024-02-27"));
+        produkList.add(new Produk("BPOM0250", "Toner", "Scarlett", "2023-10-10"));
+        produkList.add(new Produk("BPOM0221", "Moisturizer", "Scarlett", "2023-09-15"));
+        produkList.add(new Produk("BPOM0222", "Serum", "Bioaqua", "2021-11-11"));
+        produkList.add(new Produk("BPOM0223", "Face Wash", "MS Glow", "2022-08-30"));
+        produkList.add(new Produk("BPOM0224", "Exfoliator", "Ponds", "2021-05-06"));
+        produkList.add(new Produk("BPOM0225", "Toner", "Scora", "2023-04-25"));
+        produkList.add(new Produk("BPOM0226", "Moisturizer", "Somethinc", "2023-02-13"));
+        produkList.add(new Produk("BPOM0227", "Sunscreen", "Wardah", "2022-12-22"));
+        produkList.add(new Produk("BPOM0228", "Serum", "Scarlett", "2021-06-07"));
+        produkList.add(new Produk("BPOM0229", "Face Wash", "Bioaqua", "2020-09-10"));
+        produkList.add(new Produk("BPOM0230", "Exfoliator", "MS Glow", "2023-03-09"));
+        produkList.add(new Produk("BPOM0231", "Toner", "Ponds", "2022-05-13"));
+        produkList.add(new Produk("BPOM0232", "Moisturizer", "Scora", "2021-01-23"));
+        produkList.add(new Produk("BPOM0233", "Sunscreen", "Somethinc", "2022-07-15"));
+        produkList.add(new Produk("BPOM0234", "Serum", "Wardah", "2020-12-18"));
+        produkList.add(new Produk("BPOM0235", "Face Wash", "Scarlett", "2024-04-07"));
+        produkList.add(new Produk("BPOM0236", "Exfoliator", "Bioaqua", "2023-10-13"));
+        produkList.add(new Produk("BPOM0237", "Toner", "MS Glow", "2021-11-05"));
+        produkList.add(new Produk("BPOM0238", "Moisturizer", "Ponds", "2022-08-25"));
+        produkList.add(new Produk("BPOM0239", "Sunscreen", "Scora", "2020-10-02"));
+        produkList.add(new Produk("BPOM0240", "Serum", "Somethinc", "2024-01-14"));
+        produkList.add(new Produk("BPOM0241", "Face Wash", "Wardah", "2023-09-05"));
+        produkList.add(new Produk("BPOM0242", "Exfoliator", "Scarlett", "2021-12-11"));
+        produkList.add(new Produk("BPOM0243", "Toner", "Bioaqua", "2023-01-22"));
+        produkList.add(new Produk("BPOM0244", "Moisturizer", "MS Glow", "2024-02-08"));
+        produkList.add(new Produk("BPOM0245", "Sunscreen", "Ponds", "2021-05-28"));
+        produkList.add(new Produk("BPOM0246", "Serum", "Scora", "2022-02-03"));
+        produkList.add(new Produk("BPOM0247", "Face Wash", "Somethinc", "2023-06-10"));
+        produkList.add(new Produk("BPOM0248", "Exfoliator", "Wardah", "2020-11-29"));
+        produkList.add(new Produk("BPOM0249", "Toner", "Scarlett", "2021-09-23"));
+        produkList.add(new Produk("BPOM0250", "Moisturizer", "Bioaqua", "2023-03-15"));
+        produkList.add(new Produk("BPOM0251", "Sunscreen", "MS Glow", "2021-07-18"));
+        produkList.add(new Produk("BPOM0252", "Serum", "Ponds", "2023-08-29"));
+        produkList.add(new Produk("BPOM0253", "Face Wash", "Scora", "2022-12-01"));
+        produkList.add(new Produk("BPOM0254", "Exfoliator", "Somethinc", "2021-04-21"));
+        produkList.add(new Produk("BPOM0255", "Toner", "Wardah", "2022-06-16"));
+        produkList.add(new Produk("BPOM0256", "Moisturizer", "Scarlett", "2023-10-26"));
+        produkList.add(new Produk("BPOM0257", "Sunscreen", "Bioaqua", "2020-08-22"));
+        produkList.add(new Produk("BPOM0258", "Serum", "MS Glow", "2023-09-17"));
+        produkList.add(new Produk("BPOM0259", "Face Wash", "Ponds", "2021-05-31"));
+        produkList.add(new Produk("BPOM0260", "Exfoliator", "Scora", "2022-01-17"));
+        produkList.add(new Produk("BPOM0261", "Toner", "lorea", "2023-12-07"));
+        produkList.add(new Produk("BPOM0262", "Moisturizer", "Wardah", "2020-10-20"));
+        produkList.add(new Produk("BPOM0263", "Sunscreen", "Scarlett", "2024-01-26"));
+        produkList.add(new Produk("BPOM0264", "Serum", "Bioaqua", "2022-04-03"));
+        produkList.add(new Produk("BPOM0265", "Face Wash", "MS Glow", "2023-02-14"));
+        produkList.add(new Produk("BPOM0266", "Exfoliator", "Ponds", "2021-12-28"));
+        produkList.add(new Produk("BPOM0267", "Toner", "Scora", "2024-04-19"));
+        produkList.add(new Produk("BPOM0268", "Moisturizer", "Somethinc", "2023-06-21"));
+        produkList.add(new Produk("BPOM0269", "Sunscreen", "Wardah", "2020-11-04"));
+        produkList.add(new Produk("BPOM0270", "Serum", "Scarlett", "2023-01-16"));
+        produkList.add(new Produk("BPOM0271", "Face Wash", "Bioaqua", "2024-03-28"));
+        produkList.add(new Produk("BPOM0272", "Exfoliator", "MS Glow", "2021-10-18"));
+        produkList.add(new Produk("BPOM0273", "Toner", "Ponds", "2022-07-27"));
+        produkList.add(new Produk("BPOM0274", "Moisturizer", "Scora", "2021-02-07"));
+        produkList.add(new Produk("BPOM0275", "Sunscreen", "Somethinc", "2020-12-11"));
+        produkList.add(new Produk("BPOM0276", "Serum", "Wardah", "2022-05-25"));
+        produkList.add(new Produk("BPOM0277", "Face Wash", "Scarlett", "2023-11-02"));
+        produkList.add(new Produk("BPOM0278", "Exfoliator", "Bioaqua", "2021-08-15"));
+        produkList.add(new Produk("BPOM0279", "Toner", "MS Glow", "2023-07-23"));
+        produkList.add(new Produk("BPOM0280", "Moisturizer", "Ponds", "2020-06-30"));
+        produkList.add(new Produk("BPOM0281", "Sunscreen", "Scora", "2023-10-20"));
+        produkList.add(new Produk("BPOM0282", "Serum", "Somethinc", "2022-11-14"));
+        produkList.add(new Produk("BPOM0283", "Face Wash", "Wardah", "2024-04-24"));
+        produkList.add(new Produk("BPOM0284", "Exfoliator", "Scarlett", "2021-02-02"));
+        produkList.add(new Produk("BPOM0285", "Toner", "Bioaqua", "2023-05-28"));
+        produkList.add(new Produk("BPOM0286", "Moisturizer", "MS Glow", "2022-09-09"));
+        produkList.add(new Produk("BPOM0287", "Sunscreen", "Ponds", "2021-04-25"));
+        produkList.add(new Produk("BPOM0288", "Serum", "Scora", "2020-07-14"));
+        produkList.add(new Produk("BPOM0289", "Face Wash", "Somethinc", "2023-06-06"));
+        produkList.add(new Produk("BPOM0290", "Exfoliator", "Wardah", "2024-01-06"));
+        produkList.add(new Produk("BPOM0291", "Toner", "Scarlett", "2021-12-14"));
+        produkList.add(new Produk("BPOM0292", "Moisturizer", "Bioaqua", "2022-08-23"));
+        produkList.add(new Produk("BPOM0293", "Sunscreen", "MS Glow", "2024-02-03"));
+        produkList.add(new Produk("BPOM0294", "Serum", "Ponds", "2021-04-08"));
+        produkList.add(new Produk("BPOM0295", "Face Wash", "Scora", "2023-09-18"));
+        produkList.add(new Produk("BPOM0296", "Exfoliator", "Somethinc", "2022-07-07"));
+        produkList.add(new Produk("BPOM0297", "Toner", "Wardah", "2024-03-07"));
+        produkList.add(new Produk("BPOM0298", "Moisturizer", "Scarlett", "2021-09-04"));
+        produkList.add(new Produk("BPOM0299", "Sunscreen", "Bioaqua", "2022-03-05"));
+        produkList.add(new Produk("BPOM0300", "Serum", "MS Glow", "2023-11-13"));
+        produkList.add(new Produk("BPOM0301", "Face Wash", "Ponds", "2022-02-02"));
+        produkList.add(new Produk("BPOM0302", "Exfoliator", "Scora", "2020-10-13"));
+        produkList.add(new Produk("BPOM0303", "Toner", "Somethinc", "2023-07-12"));
+        produkList.add(new Produk("BPOM0304", "Moisturizer", "Wardah", "2021-11-18"));
+        produkList.add(new Produk("BPOM0305", "Sunscreen", "Scarlett", "2024-01-04"));
+        produkList.add(new Produk("BPOM0306", "Serum", "Bioaqua", "2023-04-01"));
+        produkList.add(new Produk("BPOM0307", "Face Wash", "MS Glow", "2021-09-28"));
+        produkList.add(new Produk("BPOM0308", "Exfoliator", "Ponds", "2024-02-15"));
+        produkList.add(new Produk("BPOM0309", "Toner", "Scora", "2022-10-21"));
+        produkList.add(new Produk("BPOM0310", "Moisturizer", "Somethinc", "2021-12-02"));
+        produkList.add(new Produk("BPOM0311", "Sunscreen", "Wardah", "2023-07-24"));
+        produkList.add(new Produk("BPOM0312", "Serum", "Scarlett", "2022-09-02"));
+        produkList.add(new Produk("BPOM0313", "Face Wash", "Bioaqua", "2024-03-09"));
+        produkList.add(new Produk("BPOM0314", "Exfoliator", "MS Glow", "2020-07-18"));
+        produkList.add(new Produk("BPOM0315", "Toner", "Ponds", "2021-05-25"));
+        produkList.add(new Produk("BPOM0316", "Moisturizer", "Scora", "2023-10-05"));
+        produkList.add(new Produk("BPOM0317", "Sunscreen", "Somethinc", "2021-03-13"));
+        produkList.add(new Produk("BPOM0318", "Serum", "Wardah", "2024-05-01"));
+        produkList.add(new Produk("BPOM0319", "Face Wash", "Scarlett", "2020-09-06"));
+        produkList.add(new Produk("BPOM0320", "Exfoliator", "Bioaqua", "2023-11-17"));
+        produkList.add(new Produk("BPOM0321", "Toner", "MS Glow", "2024-06-23"));
+        produkList.add(new Produk("BPOM0322", "Moisturizer", "Ponds", "2022-08-19"));
+        produkList.add(new Produk("BPOM0323", "Sunscreen", "Scora", "2021-02-25"));
+        produkList.add(new Produk("BPOM0324", "Serum", "Somethinc", "2023-03-28"));
+        produkList.add(new Produk("BPOM0325", "Face Wash", "Wardah", "2024-02-19"));
+        produkList.add(new Produk("BPOM0326", "Exfoliator", "Scarlett", "2022-06-02"));
+        produkList.add(new Produk("BPOM0327", "Toner", "Bioaqua", "2023-10-09"));
+        produkList.add(new Produk("BPOM0328", "Moisturizer", "MS Glow", "2024-01-11"));
+        produkList.add(new Produk("BPOM0329", "Sunscreen", "Ponds", "2021-10-05"));
+        produkList.add(new Produk("BPOM0330", "Serum", "Scora", "2024-03-01"));
+        produkList.add(new Produk("BPOM0331", "Face Wash", "Somethinc", "2023-07-19"));
+        produkList.add(new Produk("BPOM0332", "Exfoliator", "Wardah", "2021-04-30"));
+        produkList.add(new Produk("BPOM0333", "Toner", "Scarlett", "2024-04-06"));
+        produkList.add(new Produk("BPOM0334", "Moisturizer", "Bioaqua", "2022-09-17"));
+        produkList.add(new Produk("BPOM0334", "Moisturizer", "Bioaqua", "2022-09-17"));
+        produkList.add(new Produk("BPOM0335", "Sunscreen", "MS Glow", "2021-11-14"));
+        produkList.add(new Produk("BPOM0336", "Serum", "Scora", "2020-12-20"));
+        produkList.add(new Produk("BPOM0337", "Face Wash", "Somethinc", "2023-01-18"));
+        produkList.add(new Produk("BPOM0338", "Exfoliator", "Wardah", "2024-04-02"));
+        produkList.add(new Produk("BPOM0339", "Toner", "Scarlett", "2021-08-12"));
+        produkList.add(new Produk("BPOM0340", "Moisturizer", "Bioaqua", "2023-05-25"));
+        produkList.add(new Produk("BPOM0341", "Sunscreen", "Ponds", "2024-03-17"));
+        produkList.add(new Produk("BPOM0342", "Serum", "MS Glow", "2020-09-24"));
+        produkList.add(new Produk("BPOM0343", "Face Wash", "Avoskin", "2022-06-22"));
+        produkList.add(new Produk("BPOM0344", "Exfoliator", "Scora", "2021-03-15"));
+        produkList.add(new Produk("BPOM0345", "Toner", "The Bath Box", "2023-02-06"));
+        produkList.add(new Produk("BPOM0346", "Moisturizer", "Somethinc", "2024-01-12"));
+        produkList.add(new Produk("BPOM0347", "Sunscreen", "Elsheskin", "2021-07-21"));
+        produkList.add(new Produk("BPOM0348", "Serum", "MS Glow", "2020-10-09"));
+        produkList.add(new Produk("BPOM0349", "Face Wash", "Ponds", "2022-11-02"));
+        produkList.add(new Produk("BPOM0350", "Exfoliator", "Avoskin", "2023-09-19"));
+        produkList.add(new Produk("BPOM0351", "Toner", "The Bath Box", "2020-12-06"));
+        produkList.add(new Produk("BPOM0352", "Moisturizer", "Elsheskin", "2024-02-14"));
+        produkList.add(new Produk("BPOM0353", "Sunscreen", "Scarlett", "2023-10-12"));
+        produkList.add(new Produk("BPOM0354", "Serum", "Bioaqua", "2021-01-28"));
+        produkList.add(new Produk("BPOM0355", "Face Wash", "MS Glow", "2023-05-08"));
+        produkList.add(new Produk("BPOM0356", "Exfoliator", "Somethinc", "2022-10-17"));
+        produkList.add(new Produk("BPOM0357", "Toner", "Ponds", "2024-03-02"));
+        produkList.add(new Produk("BPOM0358", "Moisturizer", "Avoskin", "2020-08-03"));
+        produkList.add(new Produk("BPOM0359", "Sunscreen", "Scora", "2022-12-05"));
+        produkList.add(new Produk("BPOM0360", "Serum", "Elsheskin", "2023-04-16"));
+        produkList.add(new Produk("BPOM0361", "Face Wash", "The Bath Box", "2024-01-20"));
+        produkList.add(new Produk("BPOM0362", "Exfoliator", "Scarlett", "2023-07-09"));
+        produkList.add(new Produk("BPOM0363", "Toner", "Bioaqua", "2022-04-26"));
+        produkList.add(new Produk("BPOM0364", "Moisturizer", "Ponds", "2023-11-14"));
+        produkList.add(new Produk("BPOM0365", "Sunscreen", "MS Glow", "2022-06-28"));
+        produkList.add(new Produk("BPOM0366", "Serum", "Scora", "2024-02-26"));
+        produkList.add(new Produk("BPOM0367", "Face Wash", "Somethinc", "2023-08-07"));
+        produkList.add(new Produk("BPOM0368", "Exfoliator", "Avoskin", "2021-05-12"));
+        produkList.add(new Produk("BPOM0369", "Toner", "The Bath Box", "2023-02-10"));
+        produkList.add(new Produk("BPOM0370", "Moisturizer", "Elsheskin", "2022-05-29"));
+        produkList.add(new Produk("BPOM0371", "Sunscreen", "Scarlett", "2024-01-01"));
+        produkList.add(new Produk("BPOM0372", "Serum", "Bioaqua", "2023-10-30"));
+        produkList.add(new Produk("BPOM0373", "Face Wash", "MS Glow", "2022-04-03"));
+        produkList.add(new Produk("BPOM0374", "Exfoliator", "Scora", "2021-11-12"));
+        produkList.add(new Produk("BPOM0375", "Toner", "Somethinc", "2024-02-01"));
+        produkList.add(new Produk("BPOM0376", "Moisturizer", "Ponds", "2023-01-22"));
+        produkList.add(new Produk("BPOM0377", "Sunscreen", "Avoskin", "2022-02-22"));
+        produkList.add(new Produk("BPOM0378", "Serum", "The Bath Box", "2023-11-16"));
+        produkList.add(new Produk("BPOM0379", "Face Wash", "Elsheskin", "2024-03-10"));
+        produkList.add(new Produk("BPOM0380", "Exfoliator", "Scarlett", "2021-01-06"));
+        produkList.add(new Produk("BPOM0381", "Toner", "Bioaqua", "2023-04-27"));
+        produkList.add(new Produk("BPOM0382", "Moisturizer", "MS Glow", "2020-11-05"));
+        produkList.add(new Produk("BPOM0383", "Sunscreen", "Scora", "2023-03-15"));
+        produkList.add(new Produk("BPOM0384", "Serum", "Somethinc", "2021-12-30"));
+        produkList.add(new Produk("BPOM0385", "Face Wash", "Ponds", "2023-09-12"));
+        produkList.add(new Produk("BPOM0386", "Exfoliator", "Avoskin", "2021-07-05"));
+        produkList.add(new Produk("BPOM0387", "Toner", "The Bath Box", "2022-03-03"));
+        produkList.add(new Produk("BPOM0388", "Moisturizer", "Elsheskin", "2023-08-01"));
+        produkList.add(new Produk("BPOM0389", "Sunscreen", "Scarlett", "2022-10-25"));
+        produkList.add(new Produk("BPOM0390", "Serum", "Bioaqua", "2023-12-11"));
+        produkList.add(new Produk("BPOM0391", "Face Wash", "MS Glow", "2024-02-18"));
+        produkList.add(new Produk("BPOM0392", "Exfoliator", "Scora", "2020-09-29"));
+        produkList.add(new Produk("BPOM0393", "Toner", "Somethinc", "2022-07-14"));
+        produkList.add(new Produk("BPOM0394", "Moisturizer", "Ponds", "2023-03-11"));
+        produkList.add(new Produk("BPOM0395", "Sunscreen", "Avoskin", "2021-06-28"));
+        produkList.add(new Produk("BPOM0396", "Serum", "The Bath Box", "2020-12-16"));
+        produkList.add(new Produk("BPOM0397", "Face Wash", "Elsheskin", "2023-09-20"));
+        produkList.add(new Produk("BPOM0398", "Exfoliator", "Scarlett", "2024-04-08"));
+        produkList.add(new Produk("BPOM0399", "Toner", "Bioaqua", "2021-09-30"));
+        produkList.add(new Produk("BPOM0400", "Moisturizer", "MS Glow", "2022-12-12"));
+        produkList.add(new Produk("BPOM0401", "Serum", "Scora", "2024-02-28"));
+        produkList.add(new Produk("BPOM0402", "Face Wash", "Somethinc", "2023-11-10"));
+        produkList.add(new Produk("BPOM0403", "Exfoliator", "Avoskin", "2022-09-20"));
+        produkList.add(new Produk("BPOM0404", "Toner", "The Bath Box", "2023-06-19"));
+        produkList.add(new Produk("BPOM0405", "Moisturizer", "Elsheskin", "2021-12-21"));
+        produkList.add(new Produk("BPOM0406", "Sunscreen", "Scarlett", "2024-01-15"));
+        produkList.add(new Produk("BPOM0407", "Serum", "Bioaqua", "2021-10-11"));
+        produkList.add(new Produk("BPOM0408", "Face Wash", "MS Glow", "2022-08-14"));
+        produkList.add(new Produk("BPOM0409", "Exfoliator", "Scora", "2023-03-03"));
+        produkList.add(new Produk("BPOM0410", "Toner", "Ponds", "2024-03-25"));
+        produkList.add(new Produk("BPOM0411", "Moisturizer", "Avoskin", "2020-09-06"));
+        produkList.add(new Produk("BPOM0412", "Sunscreen", "The Bath Box", "2023-12-14"));
+        produkList.add(new Produk("BPOM0413", "Serum", "Elsheskin", "2022-07-02"));
+        produkList.add(new Produk("BPOM0414", "Face Wash", "Scarlett", "2021-05-13"));
+        produkList.add(new Produk("BPOM0415", "Exfoliator", "MS Glow", "2023-08-08"));
+        produkList.add(new Produk("BPOM0416", "Toner", "Avoskin", "2021-11-29"));
+        produkList.add(new Produk("BPOM0417", "Moisturizer", "Somethinc", "2020-12-11"));
+        produkList.add(new Produk("BPOM0418", "Sunscreen", "Scora", "2023-07-18"));
+        produkList.add(new Produk("BPOM0419", "Serum", "Bioaqua", "2023-11-25"));
+        produkList.add(new Produk("BPOM0420", "Face Wash", "Ponds", "2021-04-30"));
+        produkList.add(new Produk("BPOM0421", "Exfoliator", "The Bath Box", "2024-02-02"));
+        produkList.add(new Produk("BPOM0422", "Toner", "Scarlett", "2020-08-05"));
+        produkList.add(new Produk("BPOM0423", "Moisturizer", "Elsheskin", "2021-03-20"));
+        produkList.add(new Produk("BPOM0424", "Sunscreen", "Avoskin", "2022-01-14"));
+        produkList.add(new Produk("BPOM0425", "Serum", "MS Glow", "2023-09-29"));
+        produkList.add(new Produk("BPOM0426", "Face Wash", "Scora", "2020-10-23"));
+        produkList.add(new Produk("BPOM0427", "Exfoliator", "Somethinc", "2021-06-04"));
+        produkList.add(new Produk("BPOM0428", "Toner", "Bioaqua", "2022-07-13"));
+        produkList.add(new Produk("BPOM0429", "Moisturizer", "Ponds", "2023-02-05"));
+        produkList.add(new Produk("BPOM0430", "Sunscreen", "The Bath Box", "2021-09-09"));
+        produkList.add(new Produk("BPOM0431", "Serum", "Scarlett", "2023-12-10"));
+        produkList.add(new Produk("BPOM0432", "Face Wash", "Elsheskin", "2022-11-12"));
+        produkList.add(new Produk("BPOM0433", "Exfoliator", "Avoskin", "2023-02-17"));
+        produkList.add(new Produk("BPOM0434", "Toner", "MS Glow", "2021-10-16"));
+        produkList.add(new Produk("BPOM0435", "Moisturizer", "Scora", "2020-06-24"));
+        produkList.add(new Produk("BPOM0436", "Sunscreen", "Somethinc", "2022-05-17"));
+        produkList.add(new Produk("BPOM0437", "Serum", "Ponds", "2023-04-25"));
+        produkList.add(new Produk("BPOM0438", "Face Wash", "Avoskin", "2021-02-02"));
+        produkList.add(new Produk("BPOM0439", "Exfoliator", "The Bath Box", "2023-08-19"));
+        produkList.add(new Produk("BPOM0440", "Toner", "Scarlett", "2023-06-23"));
+        produkList.add(new Produk("BPOM0441", "Moisturizer", "Elsheskin", "2021-01-16"));
+        produkList.add(new Produk("BPOM0442", "Sunscreen", "Avoskin", "2024-01-22"));
+        produkList.add(new Produk("BPOM0443", "Serum", "MS Glow", "2022-03-07"));
+        produkList.add(new Produk("BPOM0444", "Face Wash", "Scora", "2023-09-11"));
+        produkList.add(new Produk("BPOM0445", "Exfoliator", "Somethinc", "2020-04-18"));
+        produkList.add(new Produk("BPOM0446", "Toner", "Ponds", "2024-03-22"));
+        produkList.add(new Produk("BPOM0447", "Moisturizer", "The Bath Box", "2022-09-11"));
+        produkList.add(new Produk("BPOM0448", "Sunscreen", "Scarlett", "2023-06-30"));
+        produkList.add(new Produk("BPOM0449", "Serum", "Elsheskin", "2023-08-26"));
+        produkList.add(new Produk("BPOM0450", "Face Wash", "Bioaqua", "2024-02-12"));
+        produkList.add(new Produk("BPOM0451", "Exfoliator", "Avoskin", "2022-03-30"));
+        produkList.add(new Produk("BPOM0452", "Toner", "MS Glow", "2023-12-02"));
+        produkList.add(new Produk("BPOM0453", "Moisturizer", "Scora", "2023-07-22"));
+        produkList.add(new Produk("BPOM0454", "Sunscreen", "Somethinc", "2021-12-03"));
+        produkList.add(new Produk("BPOM0455", "Serum", "Ponds", "2023-08-18"));
+        produkList.add(new Produk("BPOM0456", "Face Wash", "Avoskin", "2022-02-21"));
+        produkList.add(new Produk("BPOM0457", "Exfoliator", "The Bath Box", "2023-11-12"));
+        produkList.add(new Produk("BPOM0458", "Toner", "Scarlett", "2023-10-16"));
+        produkList.add(new Produk("BPOM0459", "Moisturizer", "Elsheskin", "2024-01-29"));
+        produkList.add(new Produk("BPOM0460", "Sunscreen", "Bioaqua", "2023-06-05"));
+        produkList.add(new Produk("BPOM0461", "Serum", "MS Glow", "2020-10-15"));
+        produkList.add(new Produk("BPOM0462", "Face Wash", "Scora", "2023-07-17"));
+        produkList.add(new Produk("BPOM0463", "Exfoliator", "Somethinc", "2022-08-21"));
+        produkList.add(new Produk("BPOM0464", "Toner", "Ponds", "2022-05-13"));
+        produkList.add(new Produk("BPOM0465", "Moisturizer", "Avoskin", "2024-03-05"));
+        produkList.add(new Produk("BPOM0466", "Sunscreen", "The Bath Box", "2020-12-02"));
+        produkList.add(new Produk("BPOM0467", "Serum", "Scarlett", "2021-07-19"));
+        produkList.add(new Produk("BPOM0468", "Face Wash", "Elsheskin", "2023-04-10"));
+        produkList.add(new Produk("BPOM0469", "Exfoliator", "Bioaqua", "2022-10-19"));
+        produkList.add(new Produk("BPOM0470", "Toner", "MS Glow", "2023-04-30"));
+        produkList.add(new Produk("BPOM0471", "Moisturizer", "Scora", "2021-02-10"));
+        produkList.add(new Produk("BPOM0472", "Sunscreen", "Somethinc", "2023-12-21"));
+        produkList.add(new Produk("BPOM0473", "Serum", "Ponds", "2022-05-02"));
+        produkList.add(new Produk("BPOM0474", "Face Wash", "Avoskin", "2020-10-28"));
+        produkList.add(new Produk("BPOM0475", "Exfoliator", "The Bath Box", "2023-01-18"));
+        produkList.add(new Produk("BPOM0476", "Toner", "Scarlett", "2022-06-30"));
+        produkList.add(new Produk("BPOM0477", "Moisturizer", "Elsheskin", "2023-05-04"));
+        produkList.add(new Produk("BPOM0478", "Sunscreen", "Bioaqua", "2022-01-11"));
+        produkList.add(new Produk("BPOM0479", "Serum", "MS Glow", "2024-01-04"));
+        produkList.add(new Produk("BPOM0480", "Face Wash", "Scora", "2021-08-21"));
+        produkList.add(new Produk("BPOM0481", "Exfoliator", "Somethinc", "2020-09-15"));
+        produkList.add(new Produk("BPOM0482", "Toner", "Ponds", "2021-12-09"));
+        produkList.add(new Produk("BPOM0483", "Moisturizer", "Avoskin", "2023-05-01"));
+        produkList.add(new Produk("BPOM0484", "Sunscreen", "The Bath Box", "2024-02-03"));
+        produkList.add(new Produk("BPOM0485", "Serum", "Scarlett", "2023-11-21"));
+        produkList.add(new Produk("BPOM0486", "Face Wash", "Elsheskin", "2022-07-03"));
+        produkList.add(new Produk("BPOM0487", "Exfoliator", "Bioaqua", "2023-08-14"));
+        produkList.add(new Produk("BPOM0488", "Toner", "MS Glow", "2022-11-14"));
+        produkList.add(new Produk("BPOM0489", "Moisturizer", "Scora", "2024-04-15"));
+        produkList.add(new Produk("BPOM0490", "Sunscreen", "Somethinc", "2022-08-03"));
+        produkList.add(new Produk("BPOM0491", "Serum", "Ponds", "2023-02-22"));
+        produkList.add(new Produk("BPOM0492", "Face Wash", "Avoskin", "2021-04-11"));
+        produkList.add(new Produk("BPOM0493", "Exfoliator", "The Bath Box", "2023-11-25"));
+        produkList.add(new Produk("BPOM0494", "Toner", "Scarlett", "2024-02-13"));
+        produkList.add(new Produk("BPOM0495", "Moisturizer", "Elsheskin", "2020-06-25"));
+        produkList.add(new Produk("BPOM0496", "Sunscreen", "Bioaqua", "2023-01-05"));
+        produkList.add(new Produk("BPOM0497", "Serum", "MS Glow", "2022-02-17"));
+        produkList.add(new Produk("BPOM0498", "Face Wash", "Scora", "2021-12-13"));
+        produkList.add(new Produk("BPOM0499", "Exfoliator", "Somethinc", "2023-03-03"));
+        produkList.add(new Produk("BPOM0500", "Toner", "Avoskin", "2021-09-11"));
+        produkList.add(new Produk("BPOM0501", "Face Wash", "Cerave", "2026-03-01")); 
+        
+        produkList.add(new Produk("BPOM0502", "Face Wash", "Cetaphil", "2010-09-23")); 
+
+        produkList.add(new Produk("BPOM0503", "Sunscreen", "Carasun", "2027-08-01")); 
+
+        produkList.add(new Produk("BPOM0504", "Sunscreen", "Scarlett", "2026-10-01")); 
+
+        produkList.add(new Produk("BPOM0505", "Sunscreen", "Azarine", "2026-08-01")); 
+
+        produkList.add(new Produk("BPOM0507", "Sunscreen", "Vaseline", "2025-07-22")); 
+
+        produkList.add(new Produk("BPOM0508", "Moisturizer", "Cerave", "2026-05-01")); 
+
+        produkList.add(new Produk("BPOM0509", "Moisturizer", "Cetaphil", "2010-09-23")); 
+
+        produkList.add(new Produk("BPOM0510", "Moisturizer", "Vaseline", "2027-06-27")); 
+
+        produkList.add(new Produk("BPOM0511", "Moisturizer", "Somethinc", "2010-09-23")); 
+
+        produkList.add(new Produk("BPOM0512", "Moistuizer", "Skintific", "2010-09-23")); 
+
+        produkList.add(new Produk("BPOM0513", "Micellar Water", "Garnier", "2026-12-23")); 
+
+        produkList.add(new Produk("BPOM0514", "Micellar Water", "Viva", "2026-07-01")); 
+
+        produkList.add(new Produk("BPOM0515", "Face Wash", "Bioderma", "2010-09-23")); 
+
+        produkList.add(new Produk("BPOM0516", "Moisturizer", "Illiyoon", "2026-06-18")); 
+
+        produkList.add(new Produk("BPOM0517", "Face Wash", "Illiyoon", "2010-09-23")); 
+
+        produkList.add(new Produk("BPOM0518", "Serum", "The Ordinary", "2025-11-01")); 
+
+        produkList.add(new Produk("BPOM0519", "Serum", "Somethinc", "2010-09-23")); 
+
+        produkList.add(new Produk("BPOM0520", "Serum", "Scarlett", "2010-09-23")); 
+
+        produkList.add(new Produk("BPOM0521", "serum", "Skintific", "2010-09-23")); 
+
+        produkList.add(new Produk("BPOM0522", "Lip Balm", "Vaseline", "2027-06-27")); 
+
+        produkList.add(new Produk("BPOM0523", "Moisturizer", "Y.O.U", "2025-11-28")); 
+
+        produkList.add(new Produk("BPOM0524", "Lip Balm", "Somethinc", "2027-08-05")); 
+
+        produkList.add(new Produk("BPOM0525", "Lip Balm", "Paw Paw", "2010-09-23")); 
+
+        produkList.add(new Produk("BPOM0526", "Face Wash", "Elformula", "2025-12-12")); 
+
+        produkList.add(new Produk("BPOM0527", "Face Wash", "Nutrishe", "2010-09-23")); 
+
+        produkList.add(new Produk("BPOM0528", "Face Wash", "Scarlett", "2010-09-23")); 
+
+        produkList.add(new Produk("BPOM0529", "Sunscreen", "Amaterasun", "2010-09-23")); 
+
+        produkList.add(new Produk("BPOM0530", "Face Wash", "Simple", "2026-04-15")); 
+
+        produkList.add(new Produk("BPOM0531", "Face Wash", "Hada Labo", "2027-01-12")); 
+
+        produkList.add(new Produk("BPOM0532", "Sunscreen", "Biore", "2026-11-01")); 
+
+        produkList.add(new Produk("BPOM0533", "Sunscreen", "Emina", "2025-09-01")); 
+
+        produkList.add(new Produk("BPOM0534", "Sunscreen", "Wardah", "2026-08-15")); 
+
+        produkList.add(new Produk("BPOM0535", "Moisturizer", "Laneige", "2025-02-28")); 
+
+        produkList.add(new Produk("BPOM0536", "Moisturizer", "Clinique", "2027-03-10")); 
+
+        produkList.add(new Produk("BPOM0537", "Serum", "L’Oreal", "2025-10-20")); 
+
+        produkList.add(new Produk("BPOM0538", "Serum", "Innisfree", "2026-12-31")); 
+
+        produkList.add(new Produk("BPOM0539", "Serum", "Nature Republic", "2025-06-01")); 
+
+        produkList.add(new Produk("BPOM0540", "Lip Balm", "Maybelline", "2027-01-15")); 
+
+        produkList.add(new Produk("BPOM0541", "Lip Balm", "Nivea", "2026-07-20")); 
+
+        produkList.add(new Produk("BPOM0542", "Micellar Water", "Ponds", "2025-08-30")); 
+
+        produkList.add(new Produk("BPOM0543", "Micellar Water", "Emina", "2027-05-11")); 
+
+        produkList.add(new Produk("BPOM0544", "Face Wash", "Safi", "2026-03-21")); 
+
+        produkList.add(new Produk("BPOM0545", "Face Wash", "Oxy", "2027-09-15")); 
+
+        produkList.add(new Produk("BPOM0546", "Sunscreen", "Skin Aqua", "2025-05-10")); 
+
+        produkList.add(new Produk("BPOM0547", "Sunscreen", "Avene", "2026-11-25")); 
+
+        produkList.add(new Produk("BPOM0548", "Moisturizer", "Dr. Jart+", "2025-04-18")); 
+
+        produkList.add(new Produk("BPOM0549", "Micellar Water", "Nivea", "2027-08-12")); 
+
+        produkList.add(new Produk("BPOM0550", "Serum", "Hada Labo", "2026-01-30")); 
+
+        produkList.add(new Produk("BPOM0551", "Serum", "Dear Klairs", "2025-07-18")); 
+
+        produkList.add(new Produk("BPOM0552", "Lip Balm", "Kiehl’s", "2027-02-14")); 
+
+        produkList.add(new Produk("BPOM0553", "Moisturizer", "La Roche-Posay", "2025-11-22")); 
+
+        produkList.add(new Produk("BPOM0554", "Micellar Water", "Bioderma", "2026-10-10")); 
+
+        produkList.add(new Produk("BPOM0555", "Micellar Water", "La Roche-Posay", "2027-06-30")); 
+
+        produkList.add(new Produk("BPOM0556", "Face Wash", "Garnier", "2025-01-17")); 
+
+        produkList.add(new Produk("BPOM0557", "Face Wash", "Neutrogena", "2026-05-22")); 
+
+        produkList.add(new Produk("BPOM0558", "Sunscreen", "Eucerin", "2027-03-09")); 
+
+        produkList.add(new Produk("BPOM0559", "Sunscreen", "Drunk Elephant", "2025-12-03")); 
+
+        produkList.add(new Produk("BPOM0560", "Moisturizer", "Pixy", "2026-09-19")); 
+
+        produkList.add(new Produk("BPOM0561", "Moisturizer", "Olay", "2027-04-23")); 
+
+        produkList.add(new Produk("BPOM0562", "Serum", "Estee Lauder", "2025-06-08")); 
+
+        produkList.add(new Produk("BPOM0563", "Serum", "Skinfood", "2027-07-11")); 
+
+        produkList.add(new Produk("BPOM0564", "Lip Balm", "Revlon", "2025-09-28")); 
+
+        produkList.add(new Produk("BPOM0565", "Lip Balm", "EOS", "2026-04-15")); 
+
+        produkList.add(new Produk("BPOM0566", "Micellar Water", "Clean & Clear", "2027-01-09")); 
+
+        produkList.add(new Produk("BPOM0567", "Micellar Water", "Tatcha", "2025-02-14")); 
+
+        produkList.add(new Produk("BPOM0568", "Face Wash", "Zoe", "2027-11-01")); 
+
+        produkList.add(new Produk("BPOM0569", "Face Wash", "Freeman", "2025-08-03")); 
+
+        produkList.add(new Produk("BPOM0570", "Sunscreen", "CeraVe", "2026-03-19")); 
+
+        produkList.add(new Produk("BPOM0571", "Sunscreen", "Shiseido", "2027-12-12")); 
+
+        produkList.add(new Produk("BPOM0572", "Moisturizer", "Avene", "2025-03-27")); 
+
+        produkList.add(new Produk("BPOM0573", "Moisturizer", "Vichy", "2026-07-02")); 
+
+        produkList.add(new Produk("BPOM0574", "Serum", "Dr. Dennis Gross", "2027-05-08")); 
+
+        produkList.add(new Produk("BPOM0575", "Serum", "Cosrx", "2025-09-01")); 
+
+        produkList.add(new Produk("BPOM0576", "Lip Balm", "Laneige", "2026-08-14")); 
+
+        produkList.add(new Produk("BPOM0577", "Lip Balm", "Sephora", "2027-09-05")); 
+
+        produkList.add(new Produk("BPOM0578", "Micellar Water", "Caudalie", "2025-07-13")); 
+
+        produkList.add(new Produk("BPOM0579", "Micellar Water", "Lancome", "2026-10-30")); 
+
+        produkList.add(new Produk("BPOM0580", "Face Wash", "Philosophy", "2027-06-18")); 
+
+        produkList.add(new Produk("BPOM0581", "Face Wash", "Ahava", "2025-03-22")); 
+
+        produkList.add(new Produk("BPOM0582", "Sunscreen", "Coola", "2026-11-18")); 
+
+        produkList.add(new Produk("BPOM0583", "Sunscreen", "Tula", "2027-08-01")); 
+
+        produkList.add(new Produk("BPOM0584", "Moisturizer", "Fresh", "2025-12-10")); 
+
+        produkList.add(new Produk("BPOM0585", "Moisturizer", "Glow Recipe", "2026-05-28")); 
+
+        produkList.add(new Produk("BPOM0586", "Serum", "Sunday Riley", "2027-04-12")); 
+
+        produkList.add(new Produk("BPOM0587", "Serum", "Peach & Lily", "2025-08-14")); 
+
+        produkList.add(new Produk("BPOM0588", "Lip Balm", "Burt’s Bees", "2026-09-20")); 
+
+        produkList.add(new Produk("BPOM0589", "Lip Balm", "Tarte", "2027-03-25")); 
+
+        produkList.add(new Produk("BPOM0590", "Micellar Water", "Koh Gen Do", "2025-01-31")); 
+
+        produkList.add(new Produk("BPOM0591", "Micellar Water", "Bliss", "2026-07-29")); 
+
+        produkList.add(new Produk("BPOM0592", "Face Wash", "Mario Badescu", "2027-02-17")); 
+
+        produkList.add(new Produk("BPOM0593", "Face Wash", "Origins", "2025-06-30")); 
+
+        produkList.add(new Produk("BPOM0594", "Sunscreen", "EltaMD", "2026-08-22")); 
+
+        produkList.add(new Produk("BPOM0595", "Sunscreen", "Supergoop!", "2027-12-01")); 
+
+        produkList.add(new Produk("BPOM0596", "Moisturizer", "Clinique", "2025-04-19")); 
+
+        produkList.add(new Produk("BPOM0597", "Moisturizer", "Dermalogica", "2026-03-17")); 
+
+        produkList.add(new Produk("BPOM0598", "Serum", "Murad", "2027-05-06")); 
+
+        produkList.add(new Produk("BPOM0599", "Serum", "Versed", "2025-09-22")); 
+
+        produkList.add(new Produk("BPOM0600", "Lip Balm", "Chanel", "2026-11-19")); 
+
+        produkList.add(new Produk("BPOM0601", "Face Wash", "Neutrogena", "2026-05-11")); 
+
+        produkList.add(new Produk("BPOM0602", "Face Wash", "Clinique", "2027-04-21")); 
+
+        produkList.add(new Produk("BPOM0603", "Sunscreen", "La Mer", "2026-09-05")); 
+
+        produkList.add(new Produk("BPOM0604", "Sunscreen", "Clarins", "2025-12-15")); 
+
+        produkList.add(new Produk("BPOM0605", "Moisturizer", "Sulwhasoo", "2027-07-30")); 
+
+        produkList.add(new Produk("BPOM0606", "Moisturizer", "Belif", "2026-08-01")); 
+
+        produkList.add(new Produk("BPOM0607", "Serum", "Glow Recipe", "2027-03-20")); 
+
+        produkList.add(new Produk("BPOM0608", "Serum", "Ole Henriksen", "2026-01-15")); 
+
+        produkList.add(new Produk("BPOM0609", "Lip Balm", "Dior", "2025-10-05")); 
+
+        produkList.add(new Produk("BPOM0610", "Lip Balm", "Fenty Beauty", "2026-11-01")); 
+
+        produkList.add(new Produk("BPOM0611", "Micellar Water", "Biossance", "2027-02-19")); 
+
+        produkList.add(new Produk("BPOM0612", "Micellar Water", "Drunk Elephant", "2025-09-25")); 
+
+        produkList.add(new Produk("BPOM0613", "Face Wash", "Alba Botanica", "2026-03-07")); 
+
+        produkList.add(new Produk("BPOM0614", "Face Wash", "Korres", "2027-05-03")); 
+
+        produkList.add(new Produk("BPOM0615", "Sunscreen", "Kate Somerville", "2026-10-11")); 
+
+        produkList.add(new Produk("BPOM0616", "Sunscreen", "Coty", "2025-12-27")); 
+
+        produkList.add(new Produk("BPOM0617", "Moisturizer", "The Body Shop", "2027-06-15")); 
+
+        produkList.add(new Produk("BPOM0618", "Moisturizer", "Aveeno", "2026-09-21")); 
+
+        produkList.add(new Produk("BPOM0619", "Serum", "Youth to the People", "2027-01-25")); 
+
+        produkList.add(new Produk("BPOM0620", "Serum", "Pixi", "2025-07-18")); 
+
+        produkList.add(new Produk("BPOM0621", "Lip Balm", "Tom Ford", "2026-08-19")); 
+
+        produkList.add(new Produk("BPOM0622", "Lip Balm", "Anastasia Beverly Hills", "2027-02-05")); 
+
+        produkList.add(new Produk("BPOM0623", "Micellar Water", "Fresh", "2026-04-29")); 
+
+        produkList.add(new Produk("BPOM0624", "Micellar Water", "Paula’s Choice", "2027-08-14")); 
+
+        produkList.add(new Produk("BPOM0625", "Face Wash", "Yes To", "2025-11-19")); 
+
+        produkList.add(new Produk("BPOM0626", "Face Wash", "Pacifica", "2026-12-22")); 
+
+        produkList.add(new Produk("BPOM0627", "Sunscreen", "Sun Bum", "2027-03-28")); 
+
+        produkList.add(new Produk("BPOM0628", "Sunscreen", "Korres", "2025-10-12")); 
+
+        produkList.add(new Produk("BPOM0629", "Moisturizer", "Kora Organics", "2026-07-25")); 
+
+        produkList.add(new Produk("BPOM0630", "Moisturizer", "Burt’s Bees", "2027-01-05")); 
+
+        produkList.add(new Produk("BPOM0631", "Serum", "Tatcha", "2025-06-11")); 
+
+        produkList.add(new Produk("BPOM0632", "Serum", "Mario Badescu", "2026-12-05")); 
+
+        produkList.add(new Produk("BPOM0633", "Lip Balm", "Hourglass", "2027-08-22")); 
+
+        produkList.add(new Produk("BPOM0634", "Lip Balm", "Glossier", "2025-07-03")); 
+
+        produkList.add(new Produk("BPOM0635", "Micellar Water", "Ren", "2026-01-20")); 
+
+        produkList.add(new Produk("BPOM0636", "Micellar Water", "Ahava", "2027-04-02")); 
+
+        produkList.add(new Produk("BPOM0637", "Face Wash", "Simple", "2025-09-28")); 
+
+        produkList.add(new Produk("BPOM0638", "Face Wash", "Hada Labo", "2026-08-03")); 
+
+        produkList.add(new Produk("BPOM0639", "Sunscreen", "Murad", "2027-06-14")); 
+
+        produkList.add(new Produk("BPOM0640", "Sunscreen", "Tarte", "2025-11-18")); 
+
+        produkList.add(new Produk("BPOM0641", "Moisturizer", "Cosrx", "2026-03-13")); 
+
+        produkList.add(new Produk("BPOM0642", "Moisturizer", "Eminence", "2027-07-20")); 
+
+        produkList.add(new Produk("BPOM0643", "Serum", "Laneige", "2025-05-21")); 
+
+        produkList.add(new Produk("BPOM0644", "Serum", "Algenist", "2026-09-30")); 
+
+        produkList.add(new Produk("BPOM0645", "Lip Balm", "Bite Beauty", "2027-11-12")); 
+
+        produkList.add(new Produk("BPOM0646", "Lip Balm", "Ilia", "2026-02-25")); 
+
+        produkList.add(new Produk("BPOM0647", "Micellar Water", "The Ordinary", "2027-06-04")); 
+
+        produkList.add(new Produk("BPOM0648", "Micellar Water", "Juice Beauty", "2025-10-02")); 
+
+        produkList.add(new Produk("BPOM0649", "Face Wash", "Glow Lab", "2026-03-10")); 
+
+        produkList.add(new Produk("BPOM0650", "Face Wash", "Dr. Jart+", "2027-01-08")); 
+
+        produkList.add(new Produk("BPOM0651", "Sunscreen", "Dermalogica", "2025-11-03")); 
+
+        produkList.add(new Produk("BPOM0652", "Sunscreen", "Eucerin", "2026-10-28")); 
+
+        produkList.add(new Produk("BPOM0653", "Moisturizer", "La Mer", "2027-09-19")); 
+
+
+
+                produkList.add(new Produk("BPOM0654", "Toner", "La Mer", "2027-10-01")); 
+
+            produkList.add(new Produk("BPOM0655", "Toner", "Clinique", "2027-09-12")); 
+
+            produkList.add(new Produk("BPOM0656", "Toner", "Dr. Jart+", "2026-12-11")); 
+
+            produkList.add(new Produk("BPOM0657", "Toner", "Pixi", "2027-05-01")); 
+
+            produkList.add(new Produk("BPOM0658", "Toner", "Laneige", "2026-07-25")); 
+
+            produkList.add(new Produk("BPOM0659", "Toner", "Fresh", "2025-11-15")); 
+
+            produkList.add(new Produk("BPOM0660", "Toner", "Sulwhasoo", "2026-06-30")); 
+
+            produkList.add(new Produk("BPOM0661", "Toner", "Kiehl's", "2027-03-05")); 
+
+            produkList.add(new Produk("BPOM0662", "Toner", "The Ordinary", "2026-05-18")); 
+
+            produkList.add(new Produk("BPOM0663", "Toner", "Paula's Choice", "2026-08-15")); 
+
+            produkList.add(new Produk("BPOM0664", "Toner", "Mamonde", "2025-09-10")); 
+
+            produkList.add(new Produk("BPOM0665", "Toner", "Innisfree", "2027-04-20")); 
+
+            produkList.add(new Produk("BPOM0666", "Toner", "Cosrx", "2026-11-25")); 
+
+            produkList.add(new Produk("BPOM0667", "Toner", "Dear Klairs", "2025-12-01")); 
+
+            produkList.add(new Produk("BPOM0668", "Toner", "Hada Labo", "2027-02-15")); 
+
+            produkList.add(new Produk("BPOM0669", "Toner", "Some By Mi", "2026-03-05")); 
+
+            produkList.add(new Produk("BPOM0670", "Toner", "Thayers", "2026-09-01")); 
+
+            produkList.add(new Produk("BPOM0671", "Toner", "Benton", "2027-06-05")); 
+
+            produkList.add(new Produk("BPOM0672", "Toner", "Isntree", "2026-08-17")); 
+
+            produkList.add(new Produk("BPOM0673", "Toner", "Neutrogena", "2027-07-10")); 
+
+            produkList.add(new Produk("BPOM0674", "Toner", "Drunk Elephant", "2025-11-23")); 
+
+            produkList.add(new Produk("BPOM0675", "Toner", "Belif", "2027-08-13")); 
+
+            produkList.add(new Produk("BPOM0676", "Toner", "Glow Recipe", "2025-10-19")); 
+
+            produkList.add(new Produk("BPOM0677", "Toner", "Murad", "2026-04-12")); 
+
+            produkList.add(new Produk("BPOM0678", "Toner", "Olay", "2027-11-22")); 
+
+            produkList.add(new Produk("BPOM0679", "Toner", "Avene", "2026-02-14")); 
+
+            produkList.add(new Produk("BPOM0680", "Toner", "Eminence", "2027-12-25")); 
+
+            produkList.add(new Produk("BPOM0681", "Toner", "Vichy", "2027-06-14")); 
+
+            produkList.add(new Produk("BPOM0682", "Toner", "Biossance", "2025-12-17")); 
+
+            produkList.add(new Produk("BPOM0683", "Toner", "Burt’s Bees", "2027-05-12")); 
+
+            produkList.add(new Produk("BPOM0684", "Toner", "Ahava", "2026-01-19")); 
+
+            produkList.add(new Produk("BPOM0685", "Toner", "L’Oreal", "2025-08-20")); 
+
+            produkList.add(new Produk("BPOM0686", "Toner", "Peach & Lily", "2027-02-22")); 
+
+            produkList.add(new Produk("BPOM0687", "Toner", "Skinfood", "2026-04-25")); 
+
+            produkList.add(new Produk("BPOM0688", "Toner", "Mario Badescu", "2026-12-05")); 
+
+            produkList.add(new Produk("BPOM0689", "Toner", "Eucerin", "2025-10-29")); 
+
+            produkList.add(new Produk("BPOM0690", "Toner", "Dr. Dennis Gross", "2027-03-20")); 
+
+            produkList.add(new Produk("BPOM0691", "Toner", "Shiseido", "2026-07-18")); 
+
+            produkList.add(new Produk("BPOM0692", "Toner", "La Roche-Posay", "2027-04-10")); 
+
+            produkList.add(new Produk("BPOM0693", "Toner", "The Body Shop", "2025-09-13")); 
+
+            produkList.add(new Produk("BPOM0694", "Toner", "Dermalogica", "2027-06-22")); 
+
+            produkList.add(new Produk("BPOM0695", "Toner", "Clarins", "2026-01-30")); 
+
+            produkList.add(new Produk("BPOM0696", "Toner", "Supergoop!", "2027-12-14")); 
+
+            produkList.add(new Produk("BPOM0697", "Toner", "Caudalie", "2025-10-05")); 
+
+            produkList.add(new Produk("BPOM0698", "Toner", "Koh Gen Do", "2027-08-08")); 
+
+            produkList.add(new Produk("BPOM0699", "Toner", "Ren", "2025-09-12")); 
+
+            produkList.add(new Produk("BPOM0700", "Toner", "Glow Lab", "2026-02-15")); 
+
+            produkList.add(new Produk("BPOM0701", "Toner", "Korres", "2027-01-22")); 
+
+            produkList.add(new Produk("BPOM0702", "Toner", "Juice Beauty", "2025-11-20")); 
+
+            produkList.add(new Produk("BPOM0703", "Toner", "Tatcha", "2026-08-09")); 
+
+            produkList.add(new Produk("BPOM0704", "Toner", "Youth to the People", "2027-02-28")); 
+
+            produkList.add(new Produk("BPOM0705", "Toner", "Simple", "2026-09-14")); 
+
+            produkList.add(new Produk("BPOM0706", "Toner", "Neogen", "2027-05-17")); 
+
+            produkList.add(new Produk("BPOM0707", "Toner", "EltaMD", "2026-06-25")); 
+
+            produkList.add(new Produk("BPOM0708", "Toner", "Sun Bum", "2027-10-09")); 
+
+            produkList.add(new Produk("BPOM0709", "Toner", "Kate Somerville", "2025-12-01")); 
+
+            produkList.add(new Produk("BPOM0710", "Toner", "Tom Ford", "2026-03-09")); 
+
+            produkList.add(new Produk("BPOM0711", "Exfoliator", "Bite Beauty", "2025-06-22")); 
+
+            produkList.add(new Produk("BPOM0712", "Exfoliator", "Wardah", "2026-01-15")); 
+
+            produkList.add(new Produk("BPOM0713", "Exfoliator", "Emina", "2026-03-10")); 
+
+            produkList.add(new Produk("BPOM0714", "Exfoliator", "Make Over", "2025-12-05")); 
+
+            produkList.add(new Produk("BPOM0715", "Exfoliator", "Safi", "2026-11-25")); 
+
+            produkList.add(new Produk("BPOM0716", "Exfoliator", "Viva", "2027-02-10")); 
+
+            produkList.add(new Produk("BPOM0717", "Exfoliator", "Mustika Ratu", "2027-07-15")); 
+
+            produkList.add(new Produk("BPOM0718", "Exfoliator", "Sariayu", "2025-10-20")); 
+
+            produkList.add(new Produk("BPOM0719", "Exfoliator", "Pond’s", "2026-06-30")); 
+
+            produkList.add(new Produk("BPOM0720", "Exfoliator", "Citra", "2026-08-19")); 
+
+            produkList.add(new Produk("BPOM0721", "Exfoliator", "Pixy", "2027-01-25")); 
+
+            produkList.add(new Produk("BPOM0722", "Exfoliator", "Herborist", "2026-02-15")); 
+
+            produkList.add(new Produk("BPOM0723", "Exfoliator", "The Bath Box", "2027-04-07")); 
+
+            produkList.add(new Produk("BPOM0724", "Exfoliator", "Sensatia Botanicals", "2025-09-12")); 
+
+            produkList.add(new Produk("BPOM0725", "Exfoliator", "Mineral Botanica", "2026-07-05")); 
+
+            produkList.add(new Produk("BPOM0726", "Exfoliator", "Inez", "2027-03-10")); 
+
+            produkList.add(new Produk("BPOM0727", "Exfoliator", "La Tulipe", "2026-04-18")); 
+
+            produkList.add(new Produk("BPOM0728", "Exfoliator", "Erha", "2025-11-01")); 
+
+            produkList.add(new Produk("BPOM0729", "Exfoliator", "Dermies", "2027-06-12")); 
+
+            produkList.add(new Produk("BPOM0730", "Exfoliator", "Scarlett Whitening", "2026-09-10")); 
+
+            produkList.add(new Produk("BPOM0731", "Exfoliator", "Nivea", "2027-02-20")); 
+
+            produkList.add(new Produk("BPOM0732", "Exfoliator", "Marina", "2025-10-02")); 
+
+            produkList.add(new Produk("BPOM0733", "Exfoliator", "Fair & Lovely", "2026-11-10")); 
+
+            produkList.add(new Produk("BPOM0734", "Exfoliator", "Zoya", "2027-01-15")); 
+
+            produkList.add(new Produk("BPOM0735", "Exfoliator", "Biokos", "2026-05-05")); 
+
+            produkList.add(new Produk("BPOM0736", "Exfoliator", "Bioderma", "2027-03-25")); 
+
+            produkList.add(new Produk("BPOM0737", "Exfoliator", "Cetaphil", "2025-12-15")); 
+
+            produkList.add(new Produk("BPOM0738", "Exfoliator", "SK-II", "2026-07-08")); 
+
+            produkList.add(new Produk("BPOM0739", "Exfoliator", "Somethinc", "2027-06-20")); 
+
+            produkList.add(new Produk("BPOM0740", "Exfoliator", "Avoskin", "2025-10-29")); 
+
+            produkList.add(new Produk("BPOM0741", "Exfoliator", "Whitelab", "2026-03-22")); 
+
+            produkList.add(new Produk("BPOM0742", "Exfoliator", "Envygreen", "2027-02-18")); 
+
+            produkList.add(new Produk("BPOM0743", "Exfoliator", "Nameera", "2026-05-12")); 
+
+            produkList.add(new Produk("BPOM0744", "Exfoliator", "Azarine", "2027-01-09")); 
+
+            produkList.add(new Produk("BPOM0745", "Exfoliator", "Everwhite", "2026-06-14")); 
+
+            produkList.add(new Produk("BPOM0746", "Exfoliator", "Ertos", "2025-11-20")); 
+
+            produkList.add(new Produk("BPOM0747", "Exfoliator", "Luxcrime", "2026-12-01")); 
+
+            produkList.add(new Produk("BPOM0748", "Exfoliator", "For Skin’s Sake", "2027-04-01")); 
+
+            produkList.add(new Produk("BPOM0749", "Exfoliator", "Raiku", "2026-02-07")); 
+
+            produkList.add(new Produk("BPOM0750", "Exfoliator", "Somethinc x Turmeric", "2027-05-11")); 
+
+            produkList.add(new Produk("BPOM0751", "Exfoliator", "Hada Labo", "2026-01-20")); 
+
+            produkList.add(new Produk("BPOM0752", "Exfoliator", "Shiseido", "2027-03-14")); 
+
+            produkList.add(new Produk("BPOM0753", "Exfoliator", "Kose", "2025-10-17")); 
+
+            produkList.add(new Produk("BPOM0754", "Exfoliator", "Laneige", "2026-07-09")); 
+
+            produkList.add(new Produk("BPOM0755", "Exfoliator", "Innisfree", "2027-02-28")); 
+
+            produkList.add(new Produk("BPOM0756", "Exfoliator", "The Face Shop", "2025-12-22")); 
+
+            produkList.add(new Produk("BPOM0757", "Exfoliator", "Some By Mi", "2026-03-06")); 
+
+            produkList.add(new Produk("BPOM0758", "Exfoliator", "Dr. Jart+", "2027-05-19")); 
+
+            produkList.add(new Produk("BPOM0759", "Exfoliator", "COSRX", "2025-11-11")); 
+
+            produkList.add(new Produk("BPOM0760", "Exfoliator", "Klavuu", "2026-09-22")); 
+
+            produkList.add(new Produk("BPOM0761", "Masker", "Wardah", "2027-01-15")); 
+
+            produkList.add(new Produk("BPOM0762", "Masker", "Emina", "2026-03-10")); 
+
+            produkList.add(new Produk("BPOM0763", "Masker", "Make Over", "2025-12-05")); 
+
+            produkList.add(new Produk("BPOM0764", "Masker", "Safi", "2026-11-25")); 
+
+            produkList.add(new Produk("BPOM0765", "Masker", "Viva", "2027-02-10")); 
+
+            produkList.add(new Produk("BPOM0766", "Masker", "Mustika Ratu", "2027-07-15")); 
+
+            produkList.add(new Produk("BPOM0767", "Masker", "Sariayu", "2025-10-20")); 
+
+            produkList.add(new Produk("BPOM0768", "Masker", "Pond’s", "2026-06-30")); 
+
+            produkList.add(new Produk("BPOM0769", "Masker", "Citra", "2026-08-19")); 
+
+            produkList.add(new Produk("BPOM0770", "Masker", "Pixy", "2027-01-25")); 
+
+            produkList.add(new Produk("BPOM0771", "Masker", "Herborist", "2026-02-15")); 
+
+            produkList.add(new Produk("BPOM0772", "Masker", "The Bath Box", "2027-04-07")); 
+
+            produkList.add(new Produk("BPOM0773", "Masker", "Sensatia Botanicals", "2025-09-12")); 
+
+            produkList.add(new Produk("BPOM0774", "Masker", "Mineral Botanica", "2026-07-05")); 
+
+            produkList.add(new Produk("BPOM0775", "Masker", "Inez", "2027-03-10")); 
+
+            produkList.add(new Produk("BPOM0776", "Masker", "La Tulipe", "2026-04-18")); 
+
+            produkList.add(new Produk("BPOM0777", "Masker", "Erha", "2025-11-01")); 
+
+            produkList.add(new Produk("BPOM0778", "Masker", "Dermies", "2027-06-12")); 
+
+            produkList.add(new Produk("BPOM0779", "Masker", "Scarlett Whitening", "2026-09-10")); 
+
+            produkList.add(new Produk("BPOM0780", "Masker", "Nivea", "2027-02-20")); 
+
+            produkList.add(new Produk("BPOM0781", "Masker", "Marina", "2025-10-02")); 
+
+            produkList.add(new Produk("BPOM0782", "Masker", "Fair & Lovely", "2026-11-10")); 
+
+            produkList.add(new Produk("BPOM0783", "Masker", "Zoya", "2027-01-15")); 
+
+            produkList.add(new Produk("BPOM0784", "Masker", "Biokos", "2026-05-05")); 
+
+            produkList.add(new Produk("BPOM0785", "Masker", "Bioderma", "2027-03-25")); 
+
+            produkList.add(new Produk("BPOM0786", "Masker", "Cetaphil", "2025-12-15")); 
+
+            produkList.add(new Produk("BPOM0787", "Masker", "SK-II", "2026-07-08")); 
+
+            produkList.add(new Produk("BPOM0788", "Masker", "Somethinc", "2027-06-20")); 
+
+            produkList.add(new Produk("BPOM0789", "Masker", "Avoskin", "2025-10-29")); 
+
+            produkList.add(new Produk("BPOM0790", "Masker", "Whitelab", "2026-03-22")); 
+
+            produkList.add(new Produk("BPOM0791", "Masker", "Envygreen", "2027-02-18")); 
+
+            produkList.add(new Produk("BPOM0792", "Masker", "Nameera", "2026-05-12")); 
+
+            produkList.add(new Produk("BPOM0793", "Masker", "Azarine", "2027-01-09")); 
+
+            produkList.add(new Produk("BPOM0794", "Masker", "Everwhite", "2026-06-14")); 
+
+            produkList.add(new Produk("BPOM0795", "Masker", "Ertos", "2025-11-20")); 
+
+            produkList.add(new Produk("BPOM0796", "Masker", "Luxcrime", "2026-12-01")); 
+
+            produkList.add(new Produk("BPOM0797", "Masker", "For Skin’s Sake", "2027-04-01")); 
+
+            produkList.add(new Produk("BPOM0798", "Masker", "Raiku", "2026-02-07")); 
+
+            produkList.add(new Produk("BPOM0799", "Masker", "Somethinc x Turmeric", "2027-05-11")); 
+
+            produkList.add(new Produk("BPOM0800", "Masker", "Hada Labo", "2026-01-20")); 
+
+            produkList.add(new Produk("BPOM0801", "Masker", "Shiseido", "2027-03-14")); 
+
+            produkList.add(new Produk("BPOM0802", "Masker", "Kose", "2025-10-17")); 
+
+            produkList.add(new Produk("BPOM0803", "Masker", "Laneige", "2026-07-09")); 
+
+            produkList.add(new Produk("BPOM0804", "Masker", "Innisfree", "2027-02-28")); 
+
+            produkList.add(new Produk("BPOM0805", "Masker", "The Face Shop", "2025-12-22")); 
+
+            produkList.add(new Produk("BPOM0806", "Masker", "Some By Mi", "2026-03-06")); 
+
+            produkList.add(new Produk("BPOM0807", "Masker", "Dr. Jart+", "2027-05-19")); 
+
+            produkList.add(new Produk("BPOM0808", "Masker", "COSRX", "2025-11-11")); 
+
+            produkList.add(new Produk("BPOM0809", "Masker", "Klavuu", "2026-09-22")); 
+
+            produkList.add(new Produk("BPOM0810", "Lip Balm", "Wardah", "2026-04-15")); 
+
+            produkList.add(new Produk("BPOM0811", "Lip Balm", "Mineral Botanica", "2027-02-10")); 
+
+            produkList.add(new Produk("BPOM0812", "Lip Balm", "Emina", "2026-06-01")); 
+
+            produkList.add(new Produk("BPOM0813", "Lip Balm", "Make Over", "2027-01-11")); 
+
+            produkList.add(new Produk("BPOM0814", "Lip Balm", "Pixy", "2026-11-20")); 
+
+            produkList.add(new Produk("BPOM0815", "Lip Balm", "Purbasari", "2027-03-12")); 
+
+            produkList.add(new Produk("BPOM0816", "Lip Balm", "Mustika Ratu", "2026-05-08")); 
+
+            produkList.add(new Produk("BPOM0817", "Lip Balm", "Viva Cosmetics", "2027-06-25")); 
+
+            produkList.add(new Produk("BPOM0818", "Lip Balm", "Sariayu", "2026-08-18")); 
+
+            produkList.add(new Produk("BPOM0819", "Lip Balm", "Red-A", "2027-04-30")); 
+
+            produkList.add(new Produk("BPOM0820", "Lip Balm", "Fanbo", "2026-09-27")); 
+
+            produkList.add(new Produk("BPOM0821", "Lip Balm", "Marina", "2027-08-11")); 
+
+            produkList.add(new Produk("BPOM0822", "Lip Balm", "Caring Colours", "2026-07-09")); 
+
+            produkList.add(new Produk("BPOM0823", "Lip Balm", "Elsheskin", "2027-02-13")); 
+
+            produkList.add(new Produk("BPOM0824", "Lip Balm", "Ultima II", "2026-11-30")); 
+
+            produkList.add(new Produk("BPOM0825", "Lip Balm", "Luxcrime", "2027-07-04")); 
+
+            produkList.add(new Produk("BPOM0826", "Lip Balm", "Dear Me Beauty", "2026-05-22")); 
+
+            produkList.add(new Produk("BPOM0827", "Moisturizer", "Natur-E", "2026-12-15")); 
+
+            produkList.add(new Produk("BPOM0828", "Lip Balm", "Your Skin Bae", "2026-08-28")); 
+
+            produkList.add(new Produk("BPOM0829", "Lip Balm", "Nameera", "2027-04-22")); 
+
+            produkList.add(new Produk("BPOM0830", "Lip Balm", "Azarine", "2026-12-16")); 
+
+            produkList.add(new Produk("BPOM0831", "Lip Balm", "Sensatia Botanicals", "2027-06-02")); 
+
+            produkList.add(new Produk("BPOM0832", "Lip Balm", "Avoskin", "2026-09-05")); 
+
+            produkList.add(new Produk("BPOM0833", "Lip Balm", "Zoya Cosmetics", "2027-05-15")); 
+
+            produkList.add(new Produk("BPOM0834", "Lip Balm", "Luxe Organix", "2026-10-29")); 
+
+            produkList.add(new Produk("BPOM0835", "Lip Balm", "Whitelab", "2027-03-06")); 
+
+            produkList.add(new Produk("BPOM0836", "Lip Balm", "Oasea", "2026-04-04")); 
+
+            produkList.add(new Produk("BPOM0837", "Lip Balm", "Implora", "2027-08-19")); 
+
+            produkList.add(new Produk("BPOM0838", "Lip Balm", "Hanasui", "2026-05-27")); 
+
+            produkList.add(new Produk("BPOM0839", "Lip Balm", "La Tulipe", "2027-01-14")); 
+
+            produkList.add(new Produk("BPOM0840", "Lip Balm", "Kimia Farma", "2026-08-23")); 
+
+            produkList.add(new Produk("BPOM0841", "Lip Balm", "Safi", "2027-04-09")); 
+
+            produkList.add(new Produk("BPOM0842", "Lip Balm", "Erha", "2026-11-03")); 
+
+            produkList.add(new Produk("BPOM0843", "Lip Balm", "Ristra", "2027-06-21")); 
+
+            produkList.add(new Produk("BPOM0844", "Lip Balm", "Putri", "2026-10-17")); 
+
+            produkList.add(new Produk("BPOM0845", "Lip Balm", "Joylab", "2027-03-29")); 
+
+            produkList.add(new Produk("BPOM0846", "Lip Balm", "For Skin's Sake", "2026-04-23")); 
+
+            produkList.add(new Produk("BPOM0847", "Lip Balm", "Ertos", "2027-08-02")); 
+
+            produkList.add(new Produk("BPOM0848", "Lip Balm", "Jarte", "2026-05-16")); 
+
+            produkList.add(new Produk("BPOM0849", "Lip Balm", "The Bath Box", "2027-01-23")); 
+
+            produkList.add(new Produk("BPOM0850", "Lip Balm", "Hale", "2026-08-14")); 
+
+            produkList.add(new Produk("BPOM0851", "Lip Balm", "MS Glow", "2027-04-28")); 
+
+            produkList.add(new Produk("BPOM0852", "Lip Balm", "Raiku Beauty", "2026-11-11")); 
+
+            produkList.add(new Produk("BPOM0853", "Lip Balm", "Biyu", "2027-06-08")); 
+
+            produkList.add(new Produk("BPOM0854", "Lip Balm", "Skin Game", "2026-10-05")); 
+
+            produkList.add(new Produk("BPOM0855", "Lip Balm", "True to Skin", "2027-03-20")); 
+
+            produkList.add(new Produk("BPOM0856", "Lip Balm", "Skinaqua", "2026-04-06")); 
+
+            produkList.add(new Produk("BPOM0857", "Lip Balm", "Bioaqua", "2026-12-12")); 
+
+            produkList.add(new Produk("BPOM0858", "Lip Balm", "Banana Boat", "2027-05-18")); 
+
+            produkList.add(new Produk("BPOM0859", "Lip Balm", "Skinfix", "2026-06-14")); 
+
+            produkList.add(new Produk("BPOM0860", "Lip Balm", "Innisfree", "2027-03-02")); 
+
+            produkList.add(new Produk("BPOM0861", "Lip Balm", "Etude House", "2026-11-25")); 
+
+
+
+            produkList.add(new Produk("BPOM0862", "Moisturizer", "Erha", "2026-04-08")); 
+
+
+
+            produkList.add(new Produk("BPOM0863", "Lip Balm", "Nature Republic", "2026-07-01")); 
+
+            produkList.add(new Produk("BPOM0864", "Lip Balm", "The Face Shop", "2027-02-24")); 
+
+            produkList.add(new Produk("BPOM0865", "Lip Balm", "Y.O.U", "2026-08-30")); 
+
+            produkList.add(new Produk("BPOM0866", "Lip Balm", "Everwhite", "2027-06-10")); 
+
+            produkList.add(new Produk("BPOM0867", "Lip Balm", "Evoluderm", "2026-09-12")); 
+
+            produkList.add(new Produk("BPOM0868", "Lip Balm", "Holika Holika", "2027-01-03")); 
+
+            produkList.add(new Produk("BPOM0869", "Lip Balm", "Mamonde", "2026-10-20")); 
+
+            produkList.add(new Produk("BPOM0870", "Lip Balm", "Missha", "2027-03-25")); 
+
+            produkList.add(new Produk("BPOM0871", "Lip Balm", "Klavuu", "2026-05-19")); 
+
+            produkList.add(new Produk("BPOM0872", "Lip Balm", "Cosrx", "2027-04-15")); 
+
+            produkList.add(new Produk("BPOM0873", "Lip Balm", "Some By Mi", "2026-07-27")); 
+
+            produkList.add(new Produk("BPOM0874", "Lip Balm", "Avene", "2027-05-11")); 
+
+            produkList.add(new Produk("BPOM0875", "Lip Balm", "La Roche-Posay", "2026-12-07")); 
+
+            produkList.add(new Produk("BPOM0876", "Moisturizer", "Sensatia Botanicals", "2027-08-11")); 
+
+            produkList.add(new Produk("BPOM0877", "Lip Balm", "Blistex", "2026-09-18")); 
+
+            produkList.add(new Produk("BPOM0878", "Moisturizer", "Avoskin", "2027-02-28")); 
+
+            produkList.add(new Produk("BPOM0879", "Moisturizer", "Somethinc", "2025-10-20")); 
+
+            produkList.add(new Produk("BPOM0880", "Moisturizer", "The Bath Box", "2026-12-17")); 
+
+            produkList.add(new Produk("BPOM0881", "Lip Balm", "L'oreal", "2026-08-07")); 
+
+            produkList.add(new Produk("BPOM0882", "Moisturizer", "Npure", "2026-03-09")); 
+
+            produkList.add(new Produk("BPOM0883", "Lip Balm", "Carmex", "2026-11-16")); 
+
+            produkList.add(new Produk("BPOM0884", "Moisturizer", "Scarlett", "2027-06-06")); 
+
+            produkList.add(new Produk("BPOM0885", "Lip Balm", "ChapStick", "2026-10-03")); 
+
+            produkList.add(new Produk("BPOM0886", "Lip Balm", "Pond's", "2027-08-24")); 
+
+            produkList.add(new Produk("BPOM0887", "Lip Balm", "Garnier", "2026-05-02")); 
+
+            produkList.add(new Produk("BPOM0888", "Lip Balm", "Simple", "2027-07-21")); 
+
+            produkList.add(new Produk("BPOM0889", "Lip Balm", "Himalaya", "2026-06-26")); 
+
+            produkList.add(new Produk("BPOM0890", "Lip Balm", "Cetaphil", "2027-03-18")); 
+
+            produkList.add(new Produk("BPOM0891", "Lip Balm", "Sebamed", "2026-11-08")); 
+
+            produkList.add(new Produk("BPOM0892", "Lip Balm", "Aquaphor", "2027-04-19")); 
+
+            produkList.add(new Produk("BPOM0893", "Moisturizer", "Azarine", "2026-08-18")); 
+
+            produkList.add(new Produk("BPOM0894", "Lip Balm", "Dr. Jart+", "2027-06-27")); 
+
+            produkList.add(new Produk("BPOM0895", "Lip Balm", "Sulwhasoo", "2026-07-30")); 
+
+            produkList.add(new Produk("BPOM0896", "Lip Balm", "Skinfood", "2027-01-20")); 
+
+            produkList.add(new Produk("BPOM0897", "Lip Balm", "Tony Moly", "2026-09-04")); 
+
+            produkList.add(new Produk("BPOM0898", "Lip Balm", "Dear Klairs", "2027-03-13")); 
+
+            produkList.add(new Produk("BPOM0899", "Lip Balm", "Secret Key", "2026-11-22")); 
+
+            produkList.add(new Produk("BPOM0900", "Lip Balm", "Banila Co", "2027-02-17")); 
+
+            produkList.add(new Produk("BPOM0901", "Lip Balm", "Peripera", "2026-10-08")); 
+
+            produkList.add(new Produk("BPOM0902", "Lip Balm", "Juno & Co.", "2027-08-09")); 
+
+            produkList.add(new Produk("BPOM0903", "Lip Balm", "Make P:rem", "2026-05-12")); 
+
+            produkList.add(new Produk("BPOM0904", "Lip Balm", "By Wishtrend", "2027-07-01")); 
+
+            produkList.add(new Produk("BPOM0905", "Lip Balm", "Eunyul", "2026-06-20")); 
+
+            produkList.add(new Produk("BPOM0906", "Lip Balm", "Torriden", "2027-03-08")); 
+
+            produkList.add(new Produk("BPOM0907", "Lip Balm", "Skin79", "2026-12-01")); 
+
+            produkList.add(new Produk("BPOM0908", "Lip Balm", "It's Skin", "2027-04-12")); 
+
+            produkList.add(new Produk("BPOM0909", "Lip Balm", "Mediheal", "2026-08-31")); 
+
+            produkList.add(new Produk("BPOM0910", "Lip Balm", "VT Cosmetics", "2027-05-06")); 
+
+            produkList.add(new Produk("BPOM0911", "Lip Balm", "Whamisa", "2026-11-27")); 
+
+            produkList.add(new Produk("BPOM0912", "Lip Balm", "Wish Formula", "2027-02-01")); 
+
+            produkList.add(new Produk("BPOM0913", "Lip Balm", "Neogen", "2026-09-13")); 
+
+            produkList.add(new Produk("BPOM0914", "Lip Balm", "Belif", "2027-01-07")); 
+
+            produkList.add(new Produk("BPOM0915", "Lip Balm", "Huxley", "2026-07-19")); 
+
+            produkList.add(new Produk("BPOM0916", "Lip Balm", "Erborian", "2027-03-27")); 
+
+            produkList.add(new Produk("BPOM0917", "Lip Balm", "D'Alba", "2026-12-13")); 
+
+            produkList.add(new Produk("BPOM0918", "Lip Balm", "Celimax", "2027-06-17")); 
+
+            produkList.add(new Produk("BPOM0919", "Lip Balm", "Thank You Farmer", "2026-10-11")); 
+
+            produkList.add(new Produk("BPOM0920", "Lip Balm", "Purito", "2027-02-20")); 
+
+            produkList.add(new Produk("BPOM0921", "Lip Balm", "Blanc Doux", "2026-09-22")); 
+
+            produkList.add(new Produk("BPOM0922", "Lip Balm", "Tonymoly", "2027-04-01")); 
+
+            produkList.add(new Produk("BPOM0923", "Lip Balm", "Primera", "2026-06-22")); 
+
+            produkList.add(new Produk("BPOM0924", "Lip Balm", "Goodal", "2027-03-16")); 
+
+            produkList.add(new Produk("BPOM0925", "Lip Balm", "Benton", "2026-11-15")); 
+
+            produkList.add(new Produk("BPOM0926", "Lip Balm", "A'pieu", "2027-02-11")); 
+
+            produkList.add(new Produk("BPOM0927", "Lip Balm", "Dr. Ceuracle", "2026-10-02")); 
+
+            produkList.add(new Produk("BPOM0928", "Lip Balm", "I'M MEME", "2027-08-13")); 
+
+            produkList.add(new Produk("BPOM0929", "Lip Balm", "Dear Dahlia", "2026-05-25")); 
+
+            produkList.add(new Produk("BPOM0930", "Lip Balm", "Round Lab", "2027-07-09")); 
+
+            produkList.add(new Produk("BPOM0931", "Lip Balm", "The Saem", "2026-06-18")); 
+
+            produkList.add(new Produk("BPOM0932", "Lip Balm", "Nacific", "2027-03-05")); 
+
+            produkList.add(new Produk("BPOM0933", "Lip Balm", "Wishtrend", "2026-12-05")); 
+
+            produkList.add(new Produk("BPOM0934", "Lip Balm", "Mamonde", "2027-01-16")); 
+
+            produkList.add(new Produk("BPOM0935", "Lip Balm", "Skinfood", "2026-07-12")); 
+
+            produkList.add(new Produk("BPOM0936", "Lip Balm", "Leegeehaam", "2027-02-28")); 
+
+            produkList.add(new Produk("BPOM0937", "Lip Balm", "Drunk Elephant", "2026-09-03")); 
+
+            produkList.add(new Produk("BPOM0938", "Lip Balm", "Sunday Riley", "2027-01-26")); 
+
+            produkList.add(new Produk("BPOM0939", "Lip Balm", "Farmacy", "2026-11-09")); 
+
+            produkList.add(new Produk("BPOM0940", "Lip Balm", "Glow Recipe", "2027-02-26")); 
+
+
+            produkList.add(new Produk("BPOM0941", "Micellar Water", "Aqua", "2026-04-15")); 
+
+            produkList.add(new Produk("BPOM0942", "Micellar Water", "BioAqua", "2025-11-10")); 
+
+            produkList.add(new Produk("BPOM0943", "Micellar Water", "Wardah", "2026-07-20")); 
+
+            produkList.add(new Produk("BPOM0944", "Micellar Water", "Mineral Botanica", "2027-03-18")); 
+
+            produkList.add(new Produk("BPOM0945", "Micellar Water", "MS Glow", "2025-12-15")); 
+
+            produkList.add(new Produk("BPOM0946", "Micellar Water", "Azarine", "2026-08-10")); 
+
+            produkList.add(new Produk("BPOM0947", "Micellar Water", "Scarlett", "2027-02-28")); 
+
+            produkList.add(new Produk("BPOM0948", "Micellar Water", "Ovale", "2025-09-30")); 
+
+            produkList.add(new Produk("BPOM0949", "Micellar Water", "Erha", "2026-03-05")); 
+
+            produkList.add(new Produk("BPOM0950", "Micellar Water", "Luxcrime", "2027-01-10")); 
+
+            produkList.add(new Produk("BPOM0951", "Micellar Water", "Sensatia Botanicals", "2026-06-08")); 
+
+            produkList.add(new Produk("BPOM0952", "Micellar Water", "Safi", "2025-08-19")); 
+
+            produkList.add(new Produk("BPOM0953", "Moisturizer", "Skin Aqua", "2027-03-29")); 
+
+            produkList.add(new Produk("BPOM0954", "Micellar Water", "Dear Me Beauty", "2027-04-21")); 
+
+            produkList.add(new Produk("BPOM0955", "Micellar Water", "Jacquelle", "2025-11-29")); 
+
+            produkList.add(new Produk("BPOM0956", "Micellar Water", "Bali Alus", "2026-09-15")); 
+
+            produkList.add(new Produk("BPOM0957", "Micellar Water", "Herborist", "2027-07-11")); 
+
+            produkList.add(new Produk("BPOM0958", "Micellar Water", "Ultima II", "2026-10-20")); 
+
+            produkList.add(new Produk("BPOM0959", "Micellar Water", "Zoya Cosmetics", "2027-06-06")); 
+
+            produkList.add(new Produk("BPOM0960", "Micellar Water", "Make Over", "2025-12-12")); 
+
+            produkList.add(new Produk("BPOM0961", "Micellar Water", "Pixy", "2026-08-05")); 
+
+            produkList.add(new Produk("BPOM0962", "Micellar Water", "La Tulipe", "2027-03-14")); 
+
+            produkList.add(new Produk("BPOM0963", "Micellar Water", "Purbasari", "2025-07-07")); 
+
+            produkList.add(new Produk("BPOM0964", "Micellar Water", "Wardah White Secret", "2026-11-25")); 
+
+            produkList.add(new Produk("BPOM0965", "Micellar Water", "Sariayu", "2027-05-09")); 
+
+            produkList.add(new Produk("BPOM0966", "Micellar Water", "Mustika Ratu", "2025-10-20")); 
+
+            produkList.add(new Produk("BPOM0967", "Micellar Water", "The Bath Box", "2026-12-01")); 
+
+            produkList.add(new Produk("BPOM0968", "Moisturizer", "Citra", "2026-07-11")); 
+
+            produkList.add(new Produk("BPOM0969", "Micellar Water", "Citra", "2025-09-01")); 
+
+            produkList.add(new Produk("BPOM0970", "Micellar Water", "Inez", "2026-03-28")); 
+
+            produkList.add(new Produk("BPOM0971", "Micellar Water", "Ristra", "2027-02-18")); 
+
+            produkList.add(new Produk("BPOM0972", "Micellar Water", "Aulia", "2025-11-22")); 
+
+            produkList.add(new Produk("BPOM0973", "Micellar Water", "Purito", "2026-04-30")); 
+
+            produkList.add(new Produk("BPOM0974", "Micellar Water", "Somethinc", "2027-08-11")); 
+
+            produkList.add(new Produk("BPOM0975", "Micellar Water", "Vienna", "2025-07-20")); 
+
+            produkList.add(new Produk("BPOM0976", "Micellar Water", "Studio Tropik", "2026-06-27")); 
+
+            produkList.add(new Produk("BPOM0977", "Micellar Water", "Qweena", "2027-03-30")); 
+
+            produkList.add(new Produk("BPOM0978", "Micellar Water", "Martha Tilaar", "2025-09-25")); 
+
+            produkList.add(new Produk("BPOM0979", "Micellar Water", "Fable", "2026-02-15")); 
+
+            produkList.add(new Produk("BPOM0980", "Micellar Water", "Natur-E", "2027-01-05")); 
+
+            produkList.add(new Produk("BPOM0981", "Micellar Water", "Bioherb", "2025-08-28")); 
+
+            produkList.add(new Produk("BPOM0982", "Micellar Water", "Skin Dewi", "2026-05-15")); 
+
+            produkList.add(new Produk("BPOM0983", "Micellar Water", "Aizen Beauty", "2027-04-25")); 
+
+            produkList.add(new Produk("BPOM0984", "Micellar Water", "Envygreen", "2025-07-30")); 
+
+            produkList.add(new Produk("BPOM0985", "Micellar Water", "Smooto", "2026-03-05")); 
+
+            produkList.add(new Produk("BPOM0986", "Micellar Water", "Clinelle", "2027-06-20")); 
+
+            produkList.add(new Produk("BPOM0987", "Micellar Water", "Bionic Farm", "2025-10-09")); 
+
+            produkList.add(new Produk("BPOM0988", "Micellar Water", "Trueve", "2026-09-30")); 
+
+            produkList.add(new Produk("BPOM0989", "Micellar Water", "Jafra", "2027-02-03")); 
+
+            produkList.add(new Produk("BPOM0990", "Micellar Water", "Nature Republic", "2025-11-28")); 
+
+            produkList.add(new Produk("BPOM0991", "Moisturizer", "Mineral Botanica", "2027-02-01")); 
+
+            produkList.add(new Produk("BPOM0992", "Moisturizer", "Emina", "2026-05-30")); 
+
+            produkList.add(new Produk("BPOM0993", "Moisturizer", "Safi", "2027-03-15")); 
+
+            produkList.add(new Produk("BPOM0994", "Moisturizer", "Wardah", "2026-09-25")); 
+
+            produkList.add(new Produk("BPOM0995", "Moisturizer", "Make Over", "2027-04-10")); 
+
+            produkList.add(new Produk("BPOM0996", "Moisturizer", "Viva", "2025-11-30")); 
+
+            produkList.add(new Produk("BPOM0997", "Moisturizer", "Marina", "2027-07-22")); 
+
+            produkList.add(new Produk("BPOM0998", "Moisturizer", "Purbasari", "2026-06-05")); 
+
+            produkList.add(new Produk("BPOM0999", "Moisturizer", "Sariayu", "2025-12-19")); 
+
+            produkList.add(new Produk("BPOM1000", "Moisturizer", "Mustika Ratu", "2027-05-14")); 
+
+            return produkList;   
+    }
+}
